@@ -1,0 +1,574 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Địa Điểm API v1.5</title>
+</head>
+<body>
+
+    <h1 id="ia-iem-api-v1.5">Địa Điểm API v1.5</h1>
+<h3 id="cap-nhat">Cập nhật</h3>
+<h2 id="pos-ui-21042020"><code>POS UI *[21/04/2020]*</code></h2>
+<ul>
+<li><strong>Update: Frontend User</strong>
+<ol>
+<li>Cập nhập <strong>api/device</strong> : <em><strong>FullName</strong>, <strong>NameAcronymn</strong>, <strong>Avatar</strong></em>  <code>Employees</code>.</li>
+<li>Cập nhập <strong>api/pos/floor</strong>.</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><em><strong>Note</strong></em>:</p>
+<ul>
+<li>[ x ]: Vị trí thay đổi trên dữ liệu</li>
+</ul>
+</blockquote>
+<hr />
+<ol>
+<li><code>api/device</code>
+<br></li>
+</ol>
+<pre><code class="language-json">
+{
+  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      &quot;Device&quot;: [
+        {
+          &quot;_Id&quot;: &quot;Device/76&quot;,
+          &quot;_rev&quot;: &quot;_aXpidW---_&quot;,
+          &quot;_key&quot;: 76,
+          &quot;Nickname&quot;: &quot;Cashier&quot;,
+          &quot;Location&quot;: &quot;Location/17&quot;,
+          &quot;DeviceType&quot;: 1,
+          &quot;RequestNotification&quot;: null,
+          &quot;EnableNotification&quot;: null,
+          &quot;EnableLocation&quot;: null,
+          &quot;AppCode&quot;: &quot;5X5C-CB3U-6CUY&quot;,
+          &quot;HexCode&quot;: &quot;8137a2174e1944c682589265fd1f911c_20190927100844&quot;,
+          &quot;CreateDate&quot;: &quot;2019-09-27T10:08:43&quot;,
+          &quot;InDate&quot;: &quot;2020-04-21T10:59:36&quot;,
+          &quot;OutDate&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;Status&quot;: 2,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;,
+          &quot;Visible&quot;: 1,
+          &quot;DeviceId&quot;: 31
+        }
+      ],
+      &quot;Region&quot;: null,
+      &quot;SystemTimeZoneInfo&quot;: null,
+      &quot;DeviceInfoGuid&quot;: &quot;DeviceInfo/12&quot;,
+      &quot;Employees&quot;: [
+        {
+          &quot;_Id&quot;: &quot;Employee/16&quot;,
+          &quot;_rev&quot;: &quot;_ZRz-jrO--_&quot;,
+          &quot;_key&quot;: 16,
+          &quot;FirstName&quot;: &quot;Hoàng&quot;,
+          &quot;LastName&quot;: &quot;Trần&quot;,
+          [ x ]&quot;FullName&quot;: &quot;Hoàng Trần&quot;,
+          &quot;NameAcronymn&quot;: &quot;H&quot;,
+          &quot;Avatar&quot;: &quot;&quot;,[ x ]
+          &quot;DateOfBirth&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;PassCode&quot;: &quot;0011&quot;,
+          &quot;Email&quot;: &quot;tranvuong@gmail.com&quot;,
+          &quot;Phone&quot;: &quot;0874063454&quot;,
+          &quot;Department&quot;: 0,
+          &quot;Position&quot;: 0,
+          &quot;Country&quot;: 0,
+          &quot;City&quot;: 0,
+          &quot;Ward&quot;: 0
+        },
+        {
+          &quot;_Id&quot;: &quot;Employee/17&quot;,
+          &quot;_rev&quot;: &quot;_ZRztcIq--_&quot;,
+          &quot;_key&quot;: 17,
+          &quot;FirstName&quot;: &quot;Ngọc&quot;,
+          &quot;LastName&quot;: &quot;Lê&quot;,
+          [ x ]&quot;FullName&quot;: &quot;Ngọc Lê&quot;,
+          &quot;NameAcronymn&quot;: &quot;N&quot;,
+          &quot;Avatar&quot;: &quot;&quot;,[ x ]
+          &quot;DateOfBirth&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;PassCode&quot;: &quot;6525&quot;,
+          &quot;Email&quot;: &quot;ngocle@gmail.com&quot;,
+          &quot;Phone&quot;: &quot;087604035456&quot;,
+          &quot;Department&quot;: 0,
+          &quot;Position&quot;: 0,
+          &quot;Country&quot;: 0,
+          &quot;City&quot;: 0,
+          &quot;Ward&quot;: 0
+        }
+      ]
+    }
+  ],
+  &quot;PageSize&quot;: 0,
+  &quot;PageNumber&quot;: 0,
+  &quot;ItemsCount&quot;: 0,
+  &quot;PageCount&quot;: -2147483648.0
+}
+</code></pre>
+<p><br><br></p>
+<ol start="2">
+<li><code>api/pos/floor</code>
+<br></li>
+</ol>
+<pre><code class="language-json">
+{
+  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      &quot;Floor&quot;: [
+        {
+          &quot;_Id&quot;: &quot;Floor/2799851&quot;,
+          &quot;_rev&quot;: &quot;_Z7E4AH----&quot;,
+          &quot;_key&quot;: 2799851,
+          &quot;FloorId&quot;: 30,
+          &quot;FloorCode&quot;: &quot;00000u&quot;,
+          &quot;Name&quot;: &quot;F 1&quot;,
+          &quot;Handle&quot;: &quot;f-1&quot;,
+          &quot;LocationGuid&quot;: &quot;Location/17&quot;,
+          &quot;Description&quot;: null,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:14:05&quot;,
+          &quot;OrderNo&quot;: 0,
+          &quot;Visible&quot;: 1
+        },
+        {
+          &quot;_Id&quot;: &quot;Floor/2799865&quot;,
+          &quot;_rev&quot;: &quot;_Z7E4P5u---&quot;,
+          &quot;_key&quot;: 2799865,
+          &quot;FloorId&quot;: 31,
+          &quot;FloorCode&quot;: &quot;00000v&quot;,
+          &quot;Name&quot;: &quot;F 2&quot;,
+          &quot;Handle&quot;: &quot;f-2&quot;,
+          &quot;LocationGuid&quot;: &quot;Location/17&quot;,
+          &quot;Description&quot;: null,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:14:22&quot;,
+          &quot;OrderNo&quot;: 0,
+          &quot;Visible&quot;: 1
+        },
+        {
+          &quot;_Id&quot;: &quot;Floor/2799874&quot;,
+          &quot;_rev&quot;: &quot;_Z7E4WhK---&quot;,
+          &quot;_key&quot;: 2799874,
+          &quot;FloorId&quot;: 32,
+          &quot;FloorCode&quot;: &quot;00000w&quot;,
+          &quot;Name&quot;: &quot;F 3&quot;,
+          &quot;Handle&quot;: &quot;f-3&quot;,
+          &quot;LocationGuid&quot;: &quot;Location/17&quot;,
+          &quot;Description&quot;: null,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:14:28&quot;,
+          &quot;OrderNo&quot;: 0,
+          &quot;Visible&quot;: 1
+        },
+        {
+          &quot;_Id&quot;: &quot;Floor/2799883&quot;,
+          &quot;_rev&quot;: &quot;_Z7E4eUu---&quot;,
+          &quot;_key&quot;: 2799883,
+          &quot;FloorId&quot;: 33,
+          &quot;FloorCode&quot;: &quot;00000x&quot;,
+          &quot;Name&quot;: &quot;F 4&quot;,
+          &quot;Handle&quot;: &quot;f-4&quot;,
+          &quot;LocationGuid&quot;: &quot;Location/17&quot;,
+          &quot;Description&quot;: null,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:14:36&quot;,
+          &quot;OrderNo&quot;: 0,
+          &quot;Visible&quot;: 1
+        }
+      ],
+      &quot;FloorTable&quot;: [
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800227&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_moa---&quot;,
+          &quot;_key&quot;: 2800227,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 3,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800036&quot;,
+          &quot;TableName&quot;: &quot;B2&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 90.0,
+          &quot;Top&quot;: 368.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 1,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800229&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_msW---&quot;,
+          &quot;_key&quot;: 2800229,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 3,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800038&quot;,
+          &quot;TableName&quot;: &quot;B3&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 180.0,
+          &quot;Top&quot;: 368.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 2,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800231&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_mwy---&quot;,
+          &quot;_key&quot;: 2800231,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 3,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800040&quot;,
+          &quot;TableName&quot;: &quot;B4&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 0.0,
+          &quot;Top&quot;: 470.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 3,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800233&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_m1K---&quot;,
+          &quot;_key&quot;: 2800233,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 3,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800042&quot;,
+          &quot;TableName&quot;: &quot;B5&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 91.0,
+          &quot;Top&quot;: 469.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 4,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800235&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_m5i---&quot;,
+          &quot;_key&quot;: 2800235,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 3,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800068&quot;,
+          &quot;TableName&quot;: &quot;B6&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 180.0,
+          &quot;Top&quot;: 470.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 5,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800237&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_m9W---&quot;,
+          &quot;_key&quot;: 2800237,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 1,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800115&quot;,
+          &quot;TableName&quot;: &quot;D1&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 493.0,
+          &quot;Top&quot;: 80.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 6,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800239&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_nFm---&quot;,
+          &quot;_key&quot;: 2800239,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 1,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800117&quot;,
+          &quot;TableName&quot;: &quot;D2&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 583.0,
+          &quot;Top&quot;: 80.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 7,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800241&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_nJq---&quot;,
+          &quot;_key&quot;: 2800241,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 1,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800119&quot;,
+          &quot;TableName&quot;: &quot;D3&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 673.0,
+          &quot;Top&quot;: 80.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 8,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800243&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_nNy---&quot;,
+          &quot;_key&quot;: 2800243,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 1,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800127&quot;,
+          &quot;TableName&quot;: &quot;D7&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 494.0,
+          &quot;Top&quot;: 269.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 9,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800245&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_nS----&quot;,
+          &quot;_key&quot;: 2800245,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 1,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800129&quot;,
+          &quot;TableName&quot;: &quot;D8&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 585.0,
+          &quot;Top&quot;: 269.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 10,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800247&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_nWK---&quot;,
+          &quot;_key&quot;: 2800247,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 1,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800121&quot;,
+          &quot;TableName&quot;: &quot;D4&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 494.0,
+          &quot;Top&quot;: 172.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 11,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800249&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_na----&quot;,
+          &quot;_key&quot;: 2800249,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 1,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800123&quot;,
+          &quot;TableName&quot;: &quot;D5&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 584.0,
+          &quot;Top&quot;: 171.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 12,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800251&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_nd2---&quot;,
+          &quot;_key&quot;: 2800251,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 1,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800125&quot;,
+          &quot;TableName&quot;: &quot;D6&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 675.0,
+          &quot;Top&quot;: 173.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 13,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800253&quot;,
+          &quot;_rev&quot;: &quot;_Z7F_nmi---&quot;,
+          &quot;_key&quot;: 2800253,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 1,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800131&quot;,
+          &quot;TableName&quot;: &quot;D9&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 677.0,
+          &quot;Top&quot;: 267.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 14,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        },
+        {
+          &quot;_Id&quot;: &quot;FloorTable/2800225&quot;,
+          &quot;_rev&quot;: &quot;_aXo09ii--_&quot;,
+          &quot;_key&quot;: 2800225,
+          &quot;FloorGuid&quot;: &quot;Floor/2799851&quot;,
+          &quot;TableTypeId&quot;: 3,
+          &quot;SectionGuid&quot;: &quot;SectionTable/2800034&quot;,
+          &quot;TableName&quot;: &quot;B1&quot;,
+          &quot;PeopleQuantity&quot;: 0,
+          &quot;Left&quot;: 0.0,
+          &quot;Top&quot;: 368.0,
+          &quot;Width&quot;: 80,
+          &quot;Height&quot;: 80,
+          &quot;CreateDate&quot;: &quot;2020-01-31T09:22:23&quot;,
+          &quot;OrderNo&quot;: 0,
+          &quot;Visible&quot;: 0,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;
+        }
+      ],
+      &quot;TableType&quot;: [
+        {
+          &quot;_Id&quot;: &quot;TableType/2627189&quot;,
+          &quot;_rev&quot;: &quot;_Z3ynwkK---&quot;,
+          &quot;_key&quot;: 2627189,
+          &quot;TableTypeId&quot;: 1,
+          &quot;Name_vi&quot;: &quot;Hình Vuông&quot;,
+          &quot;Name_en&quot;: &quot;Square&quot;,
+          &quot;Acronymn&quot;: &quot;S&quot;,
+          &quot;Handle&quot;: &quot;square&quot;,
+          &quot;Width&quot;: 100,
+          &quot;Height&quot;: 100,
+          &quot;OrderNo&quot;: 0,
+          &quot;Visible&quot;: 1
+        },
+        {
+          &quot;_Id&quot;: &quot;TableType/2627191&quot;,
+          &quot;_rev&quot;: &quot;_Z3ynwkK--C&quot;,
+          &quot;_key&quot;: 2627191,
+          &quot;TableTypeId&quot;: 3,
+          &quot;Name_vi&quot;: &quot;Hình Tròn&quot;,
+          &quot;Name_en&quot;: &quot;Circle&quot;,
+          &quot;Acronymn&quot;: &quot;C&quot;,
+          &quot;Handle&quot;: &quot;circle&quot;,
+          &quot;Width&quot;: 100,
+          &quot;Height&quot;: 100,
+          &quot;OrderNo&quot;: 2,
+          &quot;Visible&quot;: 1
+        }
+      ]
+    }
+  ],
+  &quot;PageSize&quot;: 0,
+  &quot;PageNumber&quot;: 0,
+  &quot;ItemsCount&quot;: 0,
+  &quot;PageCount&quot;: -2147483648.0
+}{
+  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      &quot;Device&quot;: [
+        {
+          &quot;_Id&quot;: &quot;Device/76&quot;,
+          &quot;_rev&quot;: &quot;_aXpidW---_&quot;,
+          &quot;_key&quot;: 76,
+          &quot;Nickname&quot;: &quot;Cashier&quot;,
+          &quot;Location&quot;: &quot;Location/17&quot;,
+          &quot;DeviceType&quot;: 1,
+          &quot;RequestNotification&quot;: null,
+          &quot;EnableNotification&quot;: null,
+          &quot;EnableLocation&quot;: null,
+          &quot;AppCode&quot;: &quot;5X5C-CB3U-6CUY&quot;,
+          &quot;HexCode&quot;: &quot;8137a2174e1944c682589265fd1f911c_20190927100844&quot;,
+          &quot;CreateDate&quot;: &quot;2019-09-27T10:08:43&quot;,
+          &quot;InDate&quot;: &quot;2020-04-21T10:59:36&quot;,
+          &quot;OutDate&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;Status&quot;: 2,
+          &quot;UserGuid&quot;: &quot;Customer/20&quot;,
+          &quot;Visible&quot;: 1,
+          &quot;DeviceId&quot;: 31
+        }
+      ],
+      &quot;Region&quot;: null,
+      &quot;SystemTimeZoneInfo&quot;: null,
+      &quot;DeviceInfoGuid&quot;: &quot;DeviceInfo/12&quot;,
+      &quot;Employees&quot;: [
+        {
+          &quot;_Id&quot;: &quot;Employee/16&quot;,
+          &quot;_rev&quot;: &quot;_ZRz-jrO--_&quot;,
+          &quot;_key&quot;: 16,
+          &quot;FirstName&quot;: &quot;Hoàng&quot;,
+          &quot;LastName&quot;: &quot;Trần&quot;,
+          &quot;FullName&quot;: &quot;Hoàng Trần&quot;,
+          &quot;NameAcronymn&quot;: &quot;H&quot;,
+          &quot;Avatar&quot;: &quot;&quot;,
+          &quot;DateOfBirth&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;PassCode&quot;: &quot;0011&quot;,
+          &quot;Email&quot;: &quot;tranvuong@gmail.com&quot;,
+          &quot;Phone&quot;: &quot;0874063454&quot;,
+          &quot;Department&quot;: 0,
+          &quot;Position&quot;: 0,
+          &quot;Country&quot;: 0,
+          &quot;City&quot;: 0,
+          &quot;Ward&quot;: 0
+        },
+        {
+          &quot;_Id&quot;: &quot;Employee/17&quot;,
+          &quot;_rev&quot;: &quot;_ZRztcIq--_&quot;,
+          &quot;_key&quot;: 17,
+          &quot;FirstName&quot;: &quot;Ngọc&quot;,
+          &quot;LastName&quot;: &quot;Lê&quot;,
+          &quot;FullName&quot;: &quot;Ngọc Lê&quot;,
+          &quot;NameAcronymn&quot;: &quot;N&quot;,
+          &quot;Avatar&quot;: &quot;&quot;,
+          &quot;DateOfBirth&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;PassCode&quot;: &quot;6525&quot;,
+          &quot;Email&quot;: &quot;ngocle@gmail.com&quot;,
+          &quot;Phone&quot;: &quot;087604035456&quot;,
+          &quot;Department&quot;: 0,
+          &quot;Position&quot;: 0,
+          &quot;Country&quot;: 0,
+          &quot;City&quot;: 0,
+          &quot;Ward&quot;: 0
+        }
+      ]
+    }
+  ],
+  &quot;PageSize&quot;: 0,
+  &quot;PageNumber&quot;: 0,
+  &quot;ItemsCount&quot;: 0,
+  &quot;PageCount&quot;: -2147483648.0
+}
+</code></pre>
+
+
+</body>
+</html>

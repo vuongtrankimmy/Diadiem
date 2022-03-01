@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3O+e75kH3VMkDlBA4wCzE6rULwod6kIzmHiVfrqZVwOqimmNVhkHXE/OkkeIFJcv0o1S6P9yDukSOFlllYKVig==",
+  "success": true,
+  "projectFilePath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\App\\App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vuong.tran\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,50 @@
+2022-02-23 03:41:15.8225 Info Message Template Auto Format enabled
+2022-02-23 03:41:15.8330 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 03:41:15.8651 Info Adding target FileTarget(Name=allfile)
+2022-02-23 03:41:15.8651 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 03:41:15.9444 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config
+2022-02-23 03:47:28.6532 Info Message Template Auto Format enabled
+2022-02-23 03:47:28.6633 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 03:47:28.6992 Info Adding target FileTarget(Name=allfile)
+2022-02-23 03:47:28.7057 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 03:47:28.7881 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config
+2022-02-23 07:41:15.8590 Info Message Template Auto Format enabled
+2022-02-23 07:41:15.8927 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 07:41:15.9284 Info Adding target FileTarget(Name=allfile)
+2022-02-23 07:41:15.9365 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 07:41:15.9967 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config
+2022-02-23 07:41:34.0151 Info Message Template Auto Format enabled
+2022-02-23 07:41:34.0266 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 07:41:34.0606 Info Adding target FileTarget(Name=allfile)
+2022-02-23 07:41:34.0666 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 07:41:34.1552 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config
+2022-02-23 08:02:35.4369 Info Message Template Auto Format enabled
+2022-02-23 08:02:35.4487 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 08:02:35.4815 Info Adding target FileTarget(Name=allfile)
+2022-02-23 08:02:35.4873 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 08:02:35.5448 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config
+2022-02-23 08:13:55.9236 Info Message Template Auto Format enabled
+2022-02-23 08:13:55.9330 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 08:13:55.9657 Info Adding target FileTarget(Name=allfile)
+2022-02-23 08:13:55.9657 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 08:13:56.0255 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config
+2022-02-23 08:18:36.7852 Info Message Template Auto Format enabled
+2022-02-23 08:18:36.7976 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 08:18:36.8360 Info Adding target FileTarget(Name=allfile)
+2022-02-23 08:18:36.8360 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 08:18:36.9449 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config
+2022-02-23 08:21:29.7385 Info Message Template Auto Format enabled
+2022-02-23 08:21:29.7482 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 08:21:29.7803 Info Adding target FileTarget(Name=allfile)
+2022-02-23 08:21:29.7865 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 08:21:29.8640 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config
+2022-02-23 08:31:14.2300 Info Message Template Auto Format enabled
+2022-02-23 08:31:14.2409 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 08:31:14.2759 Info Adding target FileTarget(Name=allfile)
+2022-02-23 08:31:14.2759 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 08:31:14.3746 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config
+2022-02-23 08:48:36.7653 Info Message Template Auto Format enabled
+2022-02-23 08:48:36.7761 Info Loading assembly: NLog.Web.AspNetCore
+2022-02-23 08:48:36.8096 Info Adding target FileTarget(Name=allfile)
+2022-02-23 08:48:36.8157 Info Adding target FileTarget(Name=ownFile-web)
+2022-02-23 08:48:36.8856 Info Validating config: TargetNames=allfile, ownFile-web, ConfigItems=45, FilePath=/app/bin/Debug/net6.0/NLog.config

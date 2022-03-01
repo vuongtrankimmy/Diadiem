@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Địa Điểm API v1.3</title>
+</head>
+<body>
+
+    <h1 id="ia-iem-api-v1.3">Địa Điểm API v1.3</h1>
+<h3 id="cap-nhat">Cập nhật</h3>
+<h2 id="pos-ui-21022020"><code>POS UI *[21/02/2020]*</code></h2>
+<ul>
+<li><strong>Update: TimeZone</strong>
+<ol>
+<li>Cập nhập api/pos/ui <strong>font-size</strong>  <code>Welcome</code>,<code>Device Code</code>,<code>Pass_Code</code>.</li>
+<li>Thêm mới Field <strong>Circle</strong> Trong <code>Pass_Code</code>.</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><em><strong>Note</strong></em>:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked="checked" />: Vị trí thay đổi trên dữ liệu</li>
+</ul>
+</blockquote>
+<hr />
+<br>
+<pre><code class="language-json">
+{
+  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      &quot;Settings_Css&quot;: [
+        {
+          &quot;Font_Family&quot;: &quot;Roboto&quot;,
+          &quot;Font_Size&quot;: &quot;20&quot;
+        }
+      ],
+      &quot;Welcome&quot;: [
+        {
+          &quot;Pages_Welcome&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Logo&quot;: &quot;http://pos_images.diadiem.com/pos/logo/logo.png&quot;,
+              &quot;Background&quot;: &quot;http://pos_images.diadiem.com/pos/welcome/ipad/2388/Background.jpg?v=1.0&quot;,
+              &quot;Css&quot;: [
+                {
+                  &quot;Title&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#efefef&quot;,
+                      [x]&quot;Font_Size&quot;: 100,
+                      &quot;Font_Weight&quot;: &quot;Bold&quot;,
+                      &quot;Background&quot;: null
+                    }
+                  ],
+                  &quot;Description&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#efefef&quot;,
+                      [x]&quot;Font_Size&quot;: 60,
+                      &quot;Font_Weight&quot;: &quot;Regular&quot;,
+                      &quot;Background&quot;: null
+                    }
+                  ],
+                  &quot;Button&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#efefef&quot;,
+                      [x]&quot;Font_Size&quot;: 400,
+                      &quot;Font_Weight&quot;: &quot;Regular&quot;,
+                      &quot;Background&quot;: null
+                    }
+                  ]
+                }
+              ],
+              &quot;Visible&quot;: 0
+            }
+          ],
+          &quot;Pages_Welcome_Text&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Title&quot;: &quot;Diadiem Point of Sale&quot;,
+              &quot;Description&quot;: &quot;Run and grow your business&quot;,
+              &quot;Button&quot;: &quot;Get Started&quot;
+            }
+          ]
+        }
+      ],
+      &quot;Device_Code&quot;: [
+        {
+          &quot;Pages_Device_Code&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Background&quot;: [
+                {
+                  &quot;Color1&quot;: &quot;#ffffff&quot;
+                }
+              ],
+              &quot;Css&quot;: [
+                {
+                  &quot;Title&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#333333&quot;,
+                      [x]&quot;Font_Size&quot;: 40,
+                      &quot;Font_Weight&quot;: &quot;Bold&quot;,
+                      &quot;Background&quot;: null
+                    }
+                  ],
+                  &quot;Description&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#999999&quot;,
+                      [x]&quot;Font_Size&quot;: 30,
+                      &quot;Font_Weight&quot;: &quot;Regular&quot;,
+                      &quot;Background&quot;: null
+                    }
+                  ],
+                  &quot;Box_Text&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#bfbfbf&quot;,
+                      [x]&quot;Font_Size&quot;: 35,
+                      &quot;Font_Weight&quot;: &quot;Regular&quot;,
+                      &quot;Background&quot;: null
+                    }
+                  ],
+                  &quot;Button&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#ffffff&quot;,
+                      [x]&quot;Font_Size&quot;: 40,
+                      &quot;Font_Weight&quot;: &quot;Regular&quot;,
+                      &quot;Background&quot;: null
+                    }
+                  ]
+                }
+              ],
+              &quot;Visible&quot;: 0
+            }
+          ],
+          &quot;Pages_Device_Code_Text&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Title&quot;: &quot;Sign In With Device Code&quot;,
+              &quot;Description&quot;: &quot;Devices Codes are created in Dashboard for each new device, allowing you to sign in without ever sharing your email and password.&quot;,
+              &quot;Button&quot;: &quot;Sign In&quot;
+            }
+          ]
+        }
+      ],
+      &quot;Pass_Code&quot;: [
+        {
+          &quot;Pages_Pass_Code&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Background&quot;: [
+                {
+                  &quot;Color1&quot;: &quot;#546376&quot;,
+                  &quot;Color2&quot;: &quot;#000000&quot;
+                }
+              ],
+              &quot;Css&quot;: [
+                {
+                  &quot;DateTime&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#ffffff&quot;,
+                      [x]&quot;Font_Size&quot;: 60,
+                      &quot;Font_Weight&quot;: &quot;Bold&quot;
+                    }
+                  ],
+                  &quot;NumPad&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#ffffff&quot;,
+                      [x]&quot;Font_Size&quot;: 60,
+                      &quot;Font_Weight&quot;: &quot;Bold&quot;
+                    }
+                  ],
+                  &quot;Button&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#ffffff&quot;,
+                      [x]&quot;Font_Size&quot;: 40,
+                      &quot;Font_Weight&quot;: &quot;Regular&quot;
+                    }
+                  ],
+                  &quot;ClockInOut&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#ffffff&quot;,
+                      [x]&quot;Font_Size&quot;: 40,
+                      &quot;Font_Weight&quot;: &quot;Regular&quot;
+                    }
+                  ],
+                  &quot;Title&quot;: [
+                    {
+                      &quot;Color&quot;: &quot;#ffffff&quot;,
+                      [x]&quot;Font_Size&quot;: 30,
+                      &quot;Font_Weight&quot;: &quot;Regular&quot;
+                    }
+                  ],
+                  [x] &quot;Circle&quot;: [
+                    {
+                     &quot;Background&quot;: &quot;http://pos_images.diadiem.com/pos/pass-code/Circle.png&quot;,
+                     &quot;BackgroundFill&quot;: &quot;http://pos_images.diadiem.com/pos/pass-code/Circle_fill.png&quot;
+                    }
+                  ][x]
+                }
+              ],
+              &quot;Visible&quot;: 1
+            }
+          ],
+          &quot;Pages_Pass_Code_Text&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Button&quot;: &quot;Clock In/Out&quot;
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  &quot;PageSize&quot;: 0,
+  &quot;PageNumber&quot;: 0,
+  &quot;ItemsCount&quot;: 0,
+  &quot;PageCount&quot;: -2147483648.0
+}
+</code></pre>
+
+
+</body>
+</html>

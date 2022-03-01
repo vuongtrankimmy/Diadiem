@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Địa Điểm API v1.2</title>
+</head>
+<body>
+
+    <h1 id="ia-iem-api-v1.2">Địa Điểm API v1.2</h1>
+<h3 id="cap-nhat">Cập nhật</h3>
+<h2 id="frontend-user-10022020"><code>FRONTEND USER *[10/02/2020]*</code></h2>
+<ul>
+<li><strong>Update: Device</strong>
+<ol>
+<li>Đăng nhập Thiết bị bằng <code>DeviceCode</code>.</li>
+<li>Cập nhật <strong><code>POST</code></strong> Method để lưu thông tin thiết bị xuống hệ thống theo <code>DeviceInfoGuid</code>.</li>
+</ol>
+</li>
+</ul>
+<h2 id="pos-ui-10022020"><code>POS UI *[10/02/2020]*</code></h2>
+<ul>
+<li><strong>Update: TimeZone</strong>
+<ol>
+<li>Cập nhập lỗi định dạng TimeZone.</li>
+<li>Cập nhật lại ngôn ngữ hiển thị theo TimeZone (Ưu tiên tiếng anh).</li>
+</ol>
+</li>
+</ul>
+<pre><code class="language-json">
+[
+  {
+    &quot;Device&quot;: [
+      {
+        &quot;_Id&quot;: &quot;Device/76&quot;,
+        &quot;_rev&quot;: &quot;_a_lOhD6--_&quot;,
+        &quot;_key&quot;: 76,
+        &quot;Nickname&quot;: &quot;Cashier&quot;,
+        &quot;Location&quot;: &quot;Location/17&quot;,
+        &quot;DeviceType&quot;: 1,
+        &quot;RequestNotification&quot;: 1,
+        &quot;EnableNotification&quot;: 1,
+        &quot;EnableLocation&quot;: 1,
+        &quot;AppCode&quot;: &quot;5X5C-CB3U-6CUY&quot;,
+        &quot;HexCode&quot;: &quot;8137a2174e1944c682589265fd1f911c_20190927100844&quot;,
+        &quot;CreateDate&quot;: &quot;2019-09-27T10:08:43&quot;,
+        &quot;InDate&quot;: &quot;0001-01-01T00:00:00&quot;,
+        &quot;OutDate&quot;: &quot;0001-01-01T00:00:00&quot;,
+        &quot;Status&quot;: 1,
+        &quot;UserGuid&quot;: &quot;Customer/20&quot;,
+        &quot;Visible&quot;: 1,
+        &quot;DeviceId&quot;: 31
+      }
+    ],
+    &quot;Region&quot;: [
+      {
+        &quot;DisplayName&quot;: &quot;Vietnamese (Vietnam)&quot;,
+        &quot;EnglishName&quot;: &quot;Vietnamese (Vietnam)&quot;,
+        &quot;FullDateTimePattern&quot;: &quot;dd MMMM yyyy h:mm:ss tt&quot;,
+        &quot;LongDatePattern&quot;: &quot;dd MMMM yyyy&quot;,
+        &quot;LongTimePattern&quot;: &quot;h:mm:ss tt&quot;,
+        &quot;ShortDatePattern&quot;: &quot;dd/MM/yyyy&quot;,
+        &quot;ShortTimePattern&quot;: &quot;h:mm tt&quot;,
+        &quot;DayNames&quot;: [
+          &quot;Chủ Nhật&quot;,
+          &quot;Thứ Hai&quot;,
+          &quot;Thứ Ba&quot;,
+          &quot;Thứ Tư&quot;,
+          &quot;Thứ Năm&quot;,
+          &quot;Thứ Sáu&quot;,
+          &quot;Thứ Bảy&quot;
+        ],
+        &quot;MonthNames&quot;: [
+          &quot;Tháng Giêng&quot;,
+          &quot;Tháng Hai&quot;,
+          &quot;Tháng Ba&quot;,
+          &quot;Tháng Tư&quot;,
+          &quot;Tháng Năm&quot;,
+          &quot;Tháng Sáu&quot;,
+          &quot;Tháng Bảy&quot;,
+          &quot;Tháng Tám&quot;,
+          &quot;Tháng Chín&quot;,
+          &quot;Tháng Mười&quot;,
+          &quot;Tháng Mười Một&quot;,
+          &quot;Tháng Mười Hai&quot;,
+          &quot;&quot;
+        ],
+        &quot;CurrencySymbol&quot;: &quot;₫&quot;,
+        &quot;CurrencyDecimalDigits&quot;: 2,
+        &quot;CurrencyDecimalSeparator&quot;: &quot;,&quot;,
+        &quot;CurrencyGroupSeparator&quot;: &quot;.&quot;,
+        &quot;NumberDecimalDigits&quot;: 2,
+        &quot;NumberNegativePattern&quot;: &quot;1&quot;,
+        &quot;PerMilleSymbol&quot;: &quot;‰&quot;,
+        &quot;PercentDecimalDigits&quot;: 2,
+        &quot;PercentDecimalSeparator&quot;: &quot;,&quot;,
+        &quot;TextInfo&quot;: &quot;vi-VN&quot;,
+        &quot;ThreeLetterISOLanguageName&quot;: &quot;vie&quot;,
+        &quot;ThreeLetterWindowsLanguageName&quot;: &quot;VIT&quot;,
+        &quot;TwoLetterISOLanguageName&quot;: &quot;vi&quot;,
+        &quot;RegionTwoLetterISORegionName&quot;: &quot;VN&quot;,
+        &quot;RegionThreeLetterWindowsRegionName&quot;: &quot;VNM&quot;,
+        &quot;RegionGeoId&quot;: 251,
+        &quot;RegionName&quot;: &quot;VN&quot;,
+        &quot;RegionDisplayName&quot;: &quot;Vietnam&quot;,
+        &quot;RegionNativeName&quot;: &quot;Việt Nam&quot;,
+        &quot;NumericCode&quot;: 704,
+        &quot;DialCodes&quot;: [
+          &quot;84&quot;
+        ]
+      }
+    ],
+    &quot;SystemTimeZoneInfo&quot;: [
+      {
+        &quot;SystemTimeZone&quot;: &quot;(UTC+07:00) Bangkok, Hanoi, Jakarta&quot;,
+        &quot;Id&quot;: &quot;SE Asia Standard Time&quot;,
+        &quot;DaylightName&quot;: &quot;SE Asia Daylight Time&quot;,
+        &quot;DisplayName&quot;: &quot;(UTC+07:00) Bangkok, Hanoi, Jakarta&quot;,
+        &quot;BaseUtcOffset&quot;: &quot;07:00:00&quot;,
+        &quot;StandardName&quot;: &quot;SE Asia Standard Time&quot;,
+        &quot;SupportsDaylightSavingTime&quot;: false,
+        &quot;TimeZoneInfoDetail&quot;: &quot;Friday, 14 February 2020 9:56 AM&quot;,
+        &quot;TimeZoneInfoDate&quot;: &quot;Friday, 14 February 2020&quot;,
+        &quot;TimeZoneInfoTime&quot;: &quot;9:56 AM&quot;,
+        [x]&quot;TimeZoneInfoMyDayFormat&quot;: &quot;Thứ Sáu, 14 Tháng Hai&quot;,
+        &quot;TimeZoneInfoMyTimeFormat&quot;: &quot;09:56&quot;,
+        [x]&quot;TimeZoneInfoNow&quot;: &quot;2020-02-14T09:56:45&quot;
+      }
+    ],
+    [x] &quot;DeviceInfoGuid&quot;: &quot;DeviceInfo/6&quot;
+  }
+]
+</code></pre>
+
+
+</body>
+</html>

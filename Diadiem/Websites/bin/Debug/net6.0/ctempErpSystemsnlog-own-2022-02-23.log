@@ -1,0 +1,501 @@
+2022-02-23 02:20:52.0477|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:20:52.3922|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {d7a37fe6-86cc-4b58-9b0f-2d759f8d998c} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 02:20:53.8712|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/|action: 
+2022-02-23 02:20:54.0227|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/index.html|action: 
+2022-02-23 02:35:56.5755|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:35:56.8205|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {3db6e1a6-3a7d-4ffd-a3fb-5e736d4a1d80} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 02:35:58.3700|7|ERROR|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|An exception was thrown while deserializing the token. Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {d7a37fe6-86cc-4b58-9b0f-2d759f8d998c} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)|url: https://localhost/|action: 
+2022-02-23 02:35:58.3834|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/|action: 
+2022-02-23 02:35:58.4843|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/index.html|action: 
+2022-02-23 02:36:18.0872|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/index.html|action: 
+2022-02-23 02:36:23.8870|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.Net.Http.HttpRequestException: Connection refused (172.16.10.43:8529)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 69
+   at Core.Arango.Transport.ArangoHttpTransport.Authenticate(Boolean auth, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 180
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 53
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, String query, IDictionary`2 bindVars, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 55
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, FormattableString query, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 43
+   at Repository.Query.Query.List[T](Databases database, Tables table, List`1 filter, List`1 sort, Int32 limit, Int32 pageno) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Query\Query.cs:line 96
+   at Repository.RepositoryBase.RepositoryBase`1.FindAll[T](Databases databases, Tables tables, List`1 filter, List`1 sort, Int32 limit) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\RepositoryBase\RepositoryBase.cs:line 20
+   at Repository.Owners.Items.Categories.Category.CategoryRepository.GetTopNew[T](Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Owners\Items\Categories\Category\CategoryRepository.cs:line 44
+   at DataAccessLayer.Owners.App.Pages.Category.CategoryDAL.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\DataAccessLayer\Owners\App\Pages\Category\CategoryDAL.cs:line 24
+   at Websites.v1.Controllers.Category.CategoryController.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\v1\Controllers\Category\CategoryController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/Category|action: Get
+2022-02-23 02:36:23.9178||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to https://localhost:49155/api/Category?perPage=30 took 21524 ms |url: https://localhost/api/Category|action: 
+2022-02-23 02:36:41.4096|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.Net.Http.HttpRequestException: Connection refused (172.16.10.43:8529)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 69
+   at Core.Arango.Transport.ArangoHttpTransport.Authenticate(Boolean auth, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 180
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 53
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, String query, IDictionary`2 bindVars, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 55
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, FormattableString query, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 43
+   at Repository.Query.Query.List[T](Databases database, Tables table, List`1 filter, List`1 sort, Int32 limit, Int32 pageno) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Query\Query.cs:line 96
+   at Repository.RepositoryBase.RepositoryBase`1.FindAll[T](Databases databases, Tables tables, List`1 filter, List`1 sort, Int32 limit) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\RepositoryBase\RepositoryBase.cs:line 20
+   at Repository.Owners.Items.Categories.Category.CategoryRepository.GetTopNew[T](Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Owners\Items\Categories\Category\CategoryRepository.cs:line 44
+   at DataAccessLayer.Owners.App.Pages.Category.CategoryDAL.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\DataAccessLayer\Owners\App\Pages\Category\CategoryDAL.cs:line 24
+   at Websites.v1.Controllers.Category.CategoryController.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\v1\Controllers\Category\CategoryController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/Category|action: Get
+2022-02-23 02:36:41.4187||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to https://localhost:49155/api/Category?perPage=30 took 21294 ms |url: https://localhost/api/Category|action: 
+2022-02-23 02:37:07.5627|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.Net.Http.HttpRequestException: Connection refused (172.16.10.43:8529)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 69
+   at Core.Arango.Transport.ArangoHttpTransport.Authenticate(Boolean auth, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 180
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 53
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, String query, IDictionary`2 bindVars, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 55
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, FormattableString query, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 43
+   at Repository.Query.Query.List[T](Databases database, Tables table, List`1 filter, List`1 sort, Int32 limit, Int32 pageno) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Query\Query.cs:line 96
+   at Repository.RepositoryBase.RepositoryBase`1.FindAll[T](Databases databases, Tables tables, List`1 filter, List`1 sort, Int32 limit) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\RepositoryBase\RepositoryBase.cs:line 20
+   at Repository.Owners.Items.Categories.Category.CategoryRepository.GetTopNew[T](Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Owners\Items\Categories\Category\CategoryRepository.cs:line 44
+   at DataAccessLayer.Owners.App.Pages.Category.CategoryDAL.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\DataAccessLayer\Owners\App\Pages\Category\CategoryDAL.cs:line 24
+   at Websites.v1.Controllers.Category.CategoryController.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\v1\Controllers\Category\CategoryController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/Category|action: Get
+2022-02-23 02:37:07.5707||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to https://localhost:49155/api/Category?perPage=30 took 21279 ms |url: https://localhost/api/Category|action: 
+2022-02-23 02:38:14.1174|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:38:15.7304|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/|action: 
+2022-02-23 02:38:15.8348|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/index.html|action: 
+2022-02-23 02:38:40.7161|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.Net.Http.HttpRequestException: Connection refused (172.16.10.44:8529)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 69
+   at Core.Arango.Transport.ArangoHttpTransport.Authenticate(Boolean auth, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 180
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 53
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, String query, IDictionary`2 bindVars, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 55
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, FormattableString query, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 43
+   at Repository.Query.Query.List[T](Databases database, Tables table, List`1 filter, List`1 sort, Int32 limit, Int32 pageno) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Query\Query.cs:line 96
+   at Repository.RepositoryBase.RepositoryBase`1.FindAll[T](Databases databases, Tables tables, List`1 filter, List`1 sort, Int32 limit) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\RepositoryBase\RepositoryBase.cs:line 20
+   at Repository.Owners.Items.Categories.Category.CategoryRepository.GetTopNew[T](Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Owners\Items\Categories\Category\CategoryRepository.cs:line 44
+   at DataAccessLayer.Owners.App.Pages.Category.CategoryDAL.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\DataAccessLayer\Owners\App\Pages\Category\CategoryDAL.cs:line 24
+   at Websites.v1.Controllers.Category.CategoryController.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\v1\Controllers\Category\CategoryController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/Category|action: Get
+2022-02-23 02:38:40.7492||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to https://localhost:49155/api/Category?perPage=30 took 21598 ms |url: https://localhost/api/Category|action: 
+2022-02-23 02:47:15.6997|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:47:15.9962|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {332c9162-1eae-4c4a-85fd-98047beb247c} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 02:47:17.6502|7|ERROR|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|An exception was thrown while deserializing the token. Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {4a2fa18e-8bf6-4264-aa64-063cb39dd46e} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)|url: https://localhost/|action: 
+2022-02-23 02:47:17.6635|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/|action: 
+2022-02-23 02:47:17.7653|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/index.html|action: 
+2022-02-23 02:48:18.8300|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:48:20.6415|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/|action: 
+2022-02-23 02:48:20.7569|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/index.html|action: 
+2022-02-23 02:49:21.8564|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:49:23.6091|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/|action: 
+2022-02-23 02:49:23.7264|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/index.html|action: 
+2022-02-23 02:49:41.2945|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:49:43.4034|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/|action: 
+2022-02-23 02:49:43.5080|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/index.html|action: 
+2022-02-23 02:50:09.6064|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.Net.Http.HttpRequestException: Connection refused (172.16.10.44:8529)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 69
+   at Core.Arango.Transport.ArangoHttpTransport.Authenticate(Boolean auth, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 180
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 53
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, String query, IDictionary`2 bindVars, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 55
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, FormattableString query, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 43
+   at Repository.Query.Query.List[T](Databases database, Tables table, List`1 filter, List`1 sort, Int32 limit, Int32 pageno) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Query\Query.cs:line 96
+   at Repository.RepositoryBase.RepositoryBase`1.FindAll[T](Databases databases, Tables tables, List`1 filter, List`1 sort, Int32 limit) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\RepositoryBase\RepositoryBase.cs:line 20
+   at Repository.Owners.Items.Categories.Category.CategoryRepository.GetTopNew[T](Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Owners\Items\Categories\Category\CategoryRepository.cs:line 44
+   at DataAccessLayer.Owners.App.Pages.Category.CategoryDAL.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\DataAccessLayer\Owners\App\Pages\Category\CategoryDAL.cs:line 24
+   at Websites.v1.Controllers.Category.CategoryController.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\v1\Controllers\Category\CategoryController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: https://localhost/api/Category|action: Get
+2022-02-23 02:50:09.6410||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to https://localhost:49159/api/Category?perPage=30 took 21610 ms |url: https://localhost/api/Category|action: 
+2022-02-23 02:50:23.1151||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to https://localhost:49159/gateway/Category?perPage=30 took 2 ms |url: https://localhost/gateway/Category|action: 
+2022-02-23 02:53:01.9315|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:53:02.2265|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {12b7eaf6-9547-4af7-bdde-56f324dddae8} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 02:53:42.2563||ERROR|Websites.Program|Stopped program because of exception System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found or is out of date.
+To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions, Action`1 configureOptions)
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Websites.Program.Main(String[] args) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\Program.cs:line 29|url: |action: 
+2022-02-23 02:53:53.1659|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:54:55.0800|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:57:06.6596||ERROR|Websites.Program|Stopped program because of exception System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found or is out of date.
+To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions, Action`1 configureOptions)
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Websites.Program.Main(String[] args) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\Program.cs:line 29|url: |action: 
+2022-02-23 02:57:17.1820|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:57:46.0870|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 02:57:47.8426|7|ERROR|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|An exception was thrown while deserializing the token. Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {332c9162-1eae-4c4a-85fd-98047beb247c} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)|url: https://localhost/|action: 
+2022-02-23 02:57:47.8575|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/|action: 
+2022-02-23 02:57:47.9661|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: https://localhost/index.html|action: 
+2022-02-23 02:58:49.5235|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 03:01:47.2249|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 03:01:52.9018||ERROR|Websites.Program|Stopped program because of exception System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found or is out of date.
+To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions, Action`1 configureOptions)
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Websites.Program.Main(String[] args) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\Program.cs:line 29|url: |action: 
+2022-02-23 03:04:17.8300|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 03:04:22.3773|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {018f10b1-1e41-4c01-af84-c19c44ee7c9b} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 03:04:24.6913|7|ERROR|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|An exception was thrown while deserializing the token. Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {12b7eaf6-9547-4af7-bdde-56f324dddae8} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)|url: http://localhost/|action: 
+2022-02-23 03:04:24.7065|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/|action: 
+2022-02-23 03:04:24.8180|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/index.html|action: 
+2022-02-23 03:04:24.9130||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to http://localhost:49164/swagger-ui/custom.css took 6 ms |url: http://localhost/swagger-ui/custom.css|action: 
+2022-02-23 03:04:24.9130||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to http://localhost:49164/swagger-ui/custom.js took 8 ms |url: http://localhost/swagger-ui/custom.js|action: 
+2022-02-23 03:04:38.5853||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to http://localhost:49164/swagger-ui/custom.css took 2 ms |url: http://localhost/swagger-ui/custom.css|action: 
+2022-02-23 03:04:39.7554||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to http://localhost:49164/swagger-ui/custom.css took 2 ms |url: http://localhost/swagger-ui/custom.css|action: 
+2022-02-23 03:04:55.5559|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/index.html|action: 
+2022-02-23 03:04:55.6846||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to http://localhost:49164/swagger-ui/custom.js took 8 ms |url: http://localhost/swagger-ui/custom.js|action: 
+2022-02-23 03:04:55.6955||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to http://localhost:49164/swagger-ui/custom.css took 7 ms |url: http://localhost/swagger-ui/custom.css|action: 
+2022-02-23 03:06:40.9044|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 03:06:44.6675|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {ead27554-7fba-4e24-84aa-5db248f0c838} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 03:20:56.1084|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 03:20:56.3679|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {da027d20-9a7e-4602-9316-6962fa79cbd4} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 03:21:01.1695||ERROR|Websites.Program|Stopped program because of exception System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found or is out of date.
+To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions, Action`1 configureOptions)
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IEnumerable`1 listenOptions, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String startupMessage)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.Run(IWebHost host)
+   at Websites.Program.Main(String[] args) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\Program.cs:line 29|url: |action: 
+2022-02-23 03:39:37.2940|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 03:39:37.5753|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {7d675d98-2c3c-4fee-8579-d0727ae887af} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 03:39:38.9822|7|ERROR|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|An exception was thrown while deserializing the token. Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {72ee8953-3084-491f-9f35-e073487d291b} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)|url: http://localhost/|action: 
+2022-02-23 03:39:38.9954|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/|action: 
+2022-02-23 03:39:39.1158|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/index.html|action: 
+2022-02-23 03:40:04.1492|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.Net.Http.HttpRequestException: Connection refused (172.16.10.43:8529)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 69
+   at Core.Arango.Transport.ArangoHttpTransport.Authenticate(Boolean auth, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 180
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 53
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, String query, IDictionary`2 bindVars, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 55
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, FormattableString query, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 43
+   at Repository.Query.Query.List[T](Databases database, Tables table, List`1 filter, List`1 sort, Int32 limit, Int32 pageno) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Query\Query.cs:line 96
+   at Repository.RepositoryBase.RepositoryBase`1.FindAll[T](Databases databases, Tables tables, List`1 filter, List`1 sort, Int32 limit) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\RepositoryBase\RepositoryBase.cs:line 20
+   at Repository.Owners.Items.Categories.Category.CategoryRepository.GetTopNew[T](Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Owners\Items\Categories\Category\CategoryRepository.cs:line 44
+   at DataAccessLayer.Owners.App.Pages.Category.CategoryDAL.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\DataAccessLayer\Owners\App\Pages\Category\CategoryDAL.cs:line 24
+   at Websites.v1.Controllers.Category.CategoryController.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\v1\Controllers\Category\CategoryController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: http://localhost/api/Category|action: Get
+2022-02-23 03:40:04.1771||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to http://localhost:49174/api/Category?perPage=30 took 21584 ms |url: http://localhost/api/Category|action: 
+2022-02-23 03:41:17.1356|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 03:41:17.6612|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {b85c7ee4-f0e7-4fc6-99c8-4425d4409f7b} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 03:41:19.3818|7|ERROR|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|An exception was thrown while deserializing the token. Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {7d675d98-2c3c-4fee-8579-d0727ae887af} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)|url: http://localhost/|action: 
+2022-02-23 03:41:19.3981|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/|action: 
+2022-02-23 03:41:19.7466|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/index.html|action: 
+2022-02-23 03:41:44.3464|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. System.Net.Http.HttpRequestException: Connection refused (172.16.10.43:8529)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 69
+   at Core.Arango.Transport.ArangoHttpTransport.Authenticate(Boolean auth, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 180
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 53
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, String query, IDictionary`2 bindVars, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 55
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, FormattableString query, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 43
+   at Repository.Query.Query.List[T](Databases database, Tables table, List`1 filter, List`1 sort, Int32 limit, Int32 pageno) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Query\Query.cs:line 96
+   at Repository.RepositoryBase.RepositoryBase`1.FindAll[T](Databases databases, Tables tables, List`1 filter, List`1 sort, Int32 limit) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\RepositoryBase\RepositoryBase.cs:line 20
+   at Repository.Owners.Items.Categories.Category.CategoryRepository.GetTopNew[T](Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Owners\Items\Categories\Category\CategoryRepository.cs:line 44
+   at DataAccessLayer.Owners.App.Pages.Category.CategoryDAL.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\DataAccessLayer\Owners\App\Pages\Category\CategoryDAL.cs:line 24
+   at Websites.v1.Controllers.Category.CategoryController.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\v1\Controllers\Category\CategoryController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: http://localhost/api/Category|action: Get
+2022-02-23 03:41:44.3825||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to http://localhost:49176/api/Category?perPage=30 took 21534 ms |url: http://localhost/api/Category|action: 
+2022-02-23 03:47:29.5105|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 03:47:29.7962|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {ea6b1c0a-9cee-4ba5-81d5-2fff6fd94072} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 03:47:30.9511|7|ERROR|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|An exception was thrown while deserializing the token. Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The antiforgery token could not be decrypted.
+ ---> System.Security.Cryptography.CryptographicException: The key {b85c7ee4-f0e7-4fc6-99c8-4425d4409f7b} was not found in the key ring. For more information go to http://aka.ms/dataprotectionwarning
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.UnprotectCore(Byte[] protectedData, Boolean allowOperationsOnRevokedKeys, UnprotectStatus& status)
+   at Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingBasedDataProtector.Unprotect(Byte[] protectedData)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgeryTokenSerializer.Deserialize(String serializedToken)
+   at Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery.GetCookieTokenDoesNotThrow(HttpContext httpContext)|url: http://localhost/|action: 
+2022-02-23 03:47:30.9647|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/|action: 
+2022-02-23 03:47:31.0783|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/index.html|action: 
+2022-02-23 03:47:34.7889|1|ERROR|Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware|An unhandled exception has occurred while executing the request. Core.Arango.ArangoException: {"error":true,"errorNum":11,"errorMessage":"forbidden","code":401}
+   at Core.Arango.Transport.ArangoHttpTransport.SendAsync[T](HttpMethod m, String url, Object body, String transaction, Boolean throwOnError, Boolean auth, IDictionary`2 headers, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Transport\ArangoHttpTransport.cs:line 76
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, String query, IDictionary`2 bindVars, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 55
+   at Core.Arango.Modules.Internal.ArangoQueryModule.ExecuteAsync[T](ArangoHandle database, FormattableString query, Nullable`1 cache, Nullable`1 fullCount, CancellationToken cancellationToken) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\Modules\Internal\ArangoQueryModule.cs:line 43
+   at Repository.Query.Query.List[T](Databases database, Tables table, List`1 filter, List`1 sort, Int32 limit, Int32 pageno) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Query\Query.cs:line 96
+   at Repository.RepositoryBase.RepositoryBase`1.FindAll[T](Databases databases, Tables tables, List`1 filter, List`1 sort, Int32 limit) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\RepositoryBase\RepositoryBase.cs:line 20
+   at Repository.Owners.Items.Categories.Category.CategoryRepository.GetTopNew[T](Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Repository\Owners\Items\Categories\Category\CategoryRepository.cs:line 44
+   at DataAccessLayer.Owners.App.Pages.Category.CategoryDAL.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\DataAccessLayer\Owners\App\Pages\Category\CategoryDAL.cs:line 24
+   at Websites.v1.Controllers.Category.CategoryController.Get(Int32 perPage) in D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\v1\Controllers\Category\CategoryController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)|url: http://localhost/api/Category|action: Get
+2022-02-23 03:47:34.8137||DEBUG|LoggerService.LoggerManager.LoggerManager|[Performance] Request to http://localhost:49180/api/Category?perPage=30 took 589 ms |url: http://localhost/api/Category|action: 
+2022-02-23 08:14:11.7220|60|WARN|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. |url: |action: 
+2022-02-23 08:14:12.2263|35|WARN|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|No XML encryptor configured. Key {db3c8561-4888-4265-9d8c-9ec1af9a9af1} may be persisted to storage in unencrypted form. |url: |action: 
+2022-02-23 08:14:14.3786|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/|action: 
+2022-02-23 08:14:14.5833|8|WARN|Microsoft.AspNetCore.Antiforgery.DefaultAntiforgery|The 'Cache-Control' and 'Pragma' headers have been overridden and set to 'no-cache, no-store' and 'no-cache' respectively to prevent caching of this response. Any response that uses antiforgery should not be cached. |url: http://localhost/index.html|action: 

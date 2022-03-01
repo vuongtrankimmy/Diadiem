@@ -1,0 +1,889 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Websites\\Websites.csproj": {}
+  },
+  "projects": {
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+        "projectName": "BusinessLogicLayer",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\BusinessLogicLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\Contracts.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Core.Arango\\Core.Arango.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Core.Arango\\Core.Arango.csproj",
+        "projectName": "Core.Arango",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Core.Arango\\Core.Arango.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Core.Arango\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Cores\\Cores.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Cores\\Cores.csproj",
+        "projectName": "Cores",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Cores\\Cores.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Cores\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\BusinessLogicLayer\\BusinessLogicLayer.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Core.Arango\\Core.Arango.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Core.Arango\\Core.Arango.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Helpers\\Helpers.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Helpers\\Helpers.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\LoggerService\\LoggerService.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Repository\\Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AspNetCore.HealthChecks.UI": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "AspNetCore.HealthChecks.UI.Client": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "AspNetCore.HealthChecks.UI.InMemory.Storage": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "AspNetCoreRateLimit": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "HtmlSanitizer": {
+              "target": "Package",
+              "version": "[7.0.473, )"
+            },
+            "Jaeger.Core": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Jaeger.Senders.Thrift": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.3.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.IdentityModel": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.2.3, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.6.0, )"
+            },
+            "NServiceBus.Extensions.Diagnostics.OpenTelemetry": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NServiceBus.RabbitMQ": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "NWebsec.AspNetCore.Middleware": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "OpenTelemetry": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "OpenTelemetry.Exporter.Jaeger": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "OpenTelemetry.Exporter.Zipkin": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.ReDoc": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\DataAccessLayer\\DataAccessLayer.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\BusinessLogicLayer\\BusinessLogicLayer.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\Contracts.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Helpers\\Helpers.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Helpers\\Helpers.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj",
+        "projectName": "Entities",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[7.6.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Helpers\\Helpers.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Helpers\\Helpers.csproj",
+        "projectName": "Helpers",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Helpers\\Helpers.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Helpers\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\LoggerService\\LoggerService.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\LoggerService\\LoggerService.csproj",
+        "projectName": "LoggerService",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\LoggerService\\LoggerService.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\LoggerService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.15.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Repository\\Repository.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Repository\\Repository.csproj",
+        "projectName": "Repository",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Contracts\\Contracts.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Core.Arango\\Core.Arango.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Core.Arango\\Core.Arango.csproj"
+              },
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Entities\\Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Websites\\Websites.csproj": {
+      "version": "1.0.0.1",
+      "restore": {
+        "projectUniqueName": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Websites\\Websites.csproj",
+        "projectName": "Websites",
+        "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Websites\\Websites.csproj",
+        "packagesPath": "C:\\Users\\vuong.tran\\.nuget\\packages\\",
+        "outputPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Websites\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\vuong.tran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Cores\\Cores.csproj": {
+                "projectPath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Cores\\Cores.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.14.0, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "NServiceBus.Extensions.Diagnostics.OpenTelemetry": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NServiceBus.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "OpenTelemetry": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "OpenTelemetry.Exporter.Jaeger": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "OpenTelemetry.Exporter.Zipkin": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

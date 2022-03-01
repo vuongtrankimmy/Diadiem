@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Địa Điểm API v1.8</title>
+</head>
+<body>
+
+    <h1 id="ia-iem-api-v1.8">Địa Điểm API v1.8</h1>
+<h3 id="cap-nhat">Cập nhật</h3>
+<h2 id="frontend-user-28052020"><code>FRONTEND USER *[28/05/2020]*</code></h2>
+<ul>
+<li>FRONTEND USER <em>[28/05/2020]</em></li>
+</ul>
+<p>• Device:</p>
+<pre><code>    **Users**: Thông tin người dùng khi đăng nhập thiết bị.
+
+1.Thêm mới Users Thông tin thiết lập theo tài khoản được tạo ra.
+
+    ◦ <b>CustomerCode</b>: Mã đăng nhập thiết bị.
+    ◦ <b>BusinessName</b>: Tên store kinh doanh.
+    ◦ <b>Language</b>: Ngôn ngữ hiển thị - cho phép giao diện hiển thị theo nhiều ngôn ngữ khác nhau. isMain=true: Ngôn ngữ hiển thị chính hoặc mặc định.
+    ◦ <b>TimeZoneDisplayName</b>: Tên store kinh doanh.
+    ◦ <b>CurrencyId</b>: Mã currency.
+    ◦ <b>CurrencyNativeName</b>: Tên hiển thị đầy đủ currency. Chỉ sử dụng cho một số vị trí cần thiết trong setting hệ thống.
+    ◦ <b>CurrencySymbol</b>: Ký tự đặc trưng cho currency. Sử dụng và hiển thị ra trên giá hoặc những vị trí để biết hệ thống có nhiều currency hoặc currency tương ứng.
+</code></pre>
+<p>Example: /api/Device?AppCode=PVJ5-HXPV-CWEA</p>
+<pre><code class="language-{">  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      &quot;Device&quot;: [
+        {
+          &quot;_Id&quot;: &quot;Device/438231094&quot;,
+          &quot;_rev&quot;: &quot;_ajj8bfC--_&quot;,
+          &quot;_key&quot;: 438231094,
+          &quot;Nickname&quot;: &quot;Cashier&quot;,
+          &quot;Location&quot;: &quot;Location/425242095&quot;,
+          &quot;DeviceType&quot;: 1,
+          &quot;RequestNotification&quot;: null,
+          &quot;EnableNotification&quot;: null,
+          &quot;EnableLocation&quot;: null,
+          &quot;AppCode&quot;: &quot;PVJ5-HXPV-CWEA&quot;,
+          &quot;HexCode&quot;: &quot;8fa7497a380d4f7387966c6e1e2402d3_20200210155917&quot;,
+          &quot;CreateDate&quot;: &quot;2020-02-10T15:59:17&quot;,
+          &quot;InDate&quot;: &quot;2020-05-28T04:15:59&quot;,
+          &quot;OutDate&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;Status&quot;: 2,
+          &quot;UserGuid&quot;: &quot;Customer/438227755&quot;,
+          &quot;Visible&quot;: 1,
+          &quot;DeviceId&quot;: 14
+        }
+      ],
+      &quot;Region&quot;: [
+        {
+          &quot;DisplayName&quot;: &quot;Vietnamese (Vietnam)&quot;,
+          &quot;EnglishName&quot;: &quot;Vietnamese (Vietnam)&quot;,
+          &quot;FullDateTimePattern&quot;: &quot;dd MMMM yyyy h:mm:ss tt&quot;,
+          &quot;LongDatePattern&quot;: &quot;dd MMMM yyyy&quot;,
+          &quot;LongTimePattern&quot;: &quot;h:mm:ss tt&quot;,
+          &quot;ShortDatePattern&quot;: &quot;dd/MM/yyyy&quot;,
+          &quot;ShortTimePattern&quot;: &quot;h:mm tt&quot;,
+          &quot;DayNames&quot;: [
+            &quot;Chủ Nhật&quot;,
+            &quot;Thứ Hai&quot;,
+            &quot;Thứ Ba&quot;,
+            &quot;Thứ Tư&quot;,
+            &quot;Thứ Năm&quot;,
+            &quot;Thứ Sáu&quot;,
+            &quot;Thứ Bảy&quot;
+          ],
+          &quot;MonthNames&quot;: [
+            &quot;Tháng Giêng&quot;,
+            &quot;Tháng Hai&quot;,
+            &quot;Tháng Ba&quot;,
+            &quot;Tháng Tư&quot;,
+            &quot;Tháng Năm&quot;,
+            &quot;Tháng Sáu&quot;,
+            &quot;Tháng Bảy&quot;,
+            &quot;Tháng Tám&quot;,
+            &quot;Tháng Chín&quot;,
+            &quot;Tháng Mười&quot;,
+            &quot;Tháng Mười Một&quot;,
+            &quot;Tháng Mười Hai&quot;,
+            &quot;&quot;
+          ],
+          &quot;CurrencySymbol&quot;: &quot;₫&quot;,
+          &quot;CurrencyDecimalDigits&quot;: 2,
+          &quot;CurrencyDecimalSeparator&quot;: &quot;,&quot;,
+          &quot;CurrencyGroupSeparator&quot;: &quot;.&quot;,
+          &quot;NumberDecimalDigits&quot;: 2,
+          &quot;NumberNegativePattern&quot;: &quot;1&quot;,
+          &quot;PerMilleSymbol&quot;: &quot;‰&quot;,
+          &quot;PercentDecimalDigits&quot;: 2,
+          &quot;PercentDecimalSeparator&quot;: &quot;,&quot;,
+          &quot;TextInfo&quot;: &quot;vi-VN&quot;,
+          &quot;ThreeLetterISOLanguageName&quot;: &quot;vie&quot;,
+          &quot;ThreeLetterWindowsLanguageName&quot;: &quot;VIT&quot;,
+          &quot;TwoLetterISOLanguageName&quot;: &quot;vi&quot;,
+          &quot;RegionTwoLetterISORegionName&quot;: &quot;VN&quot;,
+          &quot;RegionThreeLetterWindowsRegionName&quot;: &quot;VNM&quot;,
+          &quot;RegionGeoId&quot;: 251,
+          &quot;RegionName&quot;: &quot;VN&quot;,
+          &quot;RegionDisplayName&quot;: &quot;Vietnam&quot;,
+          &quot;RegionNativeName&quot;: &quot;Việt Nam&quot;,
+          &quot;NumericCode&quot;: 704,
+          &quot;DialCodes&quot;: [
+            &quot;84&quot;
+          ]
+        }
+      ],
+      &quot;SystemTimeZoneInfo&quot;: [
+        {
+          &quot;SystemTimeZone&quot;: &quot;(UTC+07:00) Bangkok, Hanoi, Jakarta&quot;,
+          &quot;Id&quot;: &quot;SE Asia Standard Time&quot;,
+          &quot;DaylightName&quot;: &quot;SE Asia Daylight Time&quot;,
+          &quot;DisplayName&quot;: &quot;(UTC+07:00) Bangkok, Hanoi, Jakarta&quot;,
+          &quot;BaseUtcOffset&quot;: &quot;07:00:00&quot;,
+          &quot;StandardName&quot;: &quot;SE Asia Standard Time&quot;,
+          &quot;SupportsDaylightSavingTime&quot;: false,
+          &quot;TimeZoneInfoDetail&quot;: &quot;Thursday, 28 May 2020 11:18 AM&quot;,
+          &quot;TimeZoneInfoDate&quot;: &quot;Thursday, 28 May 2020&quot;,
+          &quot;TimeZoneInfoTime&quot;: &quot;11:18 AM&quot;,
+          &quot;TimeZoneInfoMyDayFormat&quot;: &quot;Thứ Năm, 28 Tháng Năm&quot;,
+          &quot;TimeZoneInfoMyTimeFormat&quot;: &quot;11:18&quot;,
+          &quot;TimeZoneInfoNow&quot;: &quot;2020-05-28T11:18:39&quot;
+        }
+      ],
+      &quot;DeviceInfoGuid&quot;: &quot;DeviceInfo/3494&quot;,
+      &quot;Employees&quot;: [
+        {
+          &quot;_Id&quot;: &quot;Employee/2578770&quot;,
+          &quot;_rev&quot;: &quot;_aA4K3le--_&quot;,
+          &quot;_key&quot;: 2578770,
+          &quot;FirstName&quot;: &quot;Hien&quot;,
+          &quot;LastName&quot;: &quot;Cao&quot;,
+          &quot;FullName&quot;: &quot;Hien Cao&quot;,
+          &quot;NameAcronymn&quot;: &quot;H&quot;,
+          &quot;Avatar&quot;: &quot;&quot;,
+          &quot;DateOfBirth&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;PassCode&quot;: &quot;1234&quot;,
+          &quot;Email&quot;: &quot;hiencao@gmail.com&quot;,
+          &quot;Phone&quot;: &quot;&quot;,
+          &quot;Department&quot;: 0,
+          &quot;Position&quot;: 0,
+          &quot;Country&quot;: 0,
+          &quot;City&quot;: 0,
+          &quot;Ward&quot;: 0
+        },
+        {
+          &quot;_Id&quot;: &quot;Employee/2578941&quot;,
+          &quot;_rev&quot;: &quot;_aA4Pnda--_&quot;,
+          &quot;_key&quot;: 2578941,
+          &quot;FirstName&quot;: &quot;Vương&quot;,
+          &quot;LastName&quot;: &quot;Trần&quot;,
+          &quot;FullName&quot;: &quot;Vương Trần&quot;,
+          &quot;NameAcronymn&quot;: &quot;V&quot;,
+          &quot;Avatar&quot;: &quot;&quot;,
+          &quot;DateOfBirth&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;PassCode&quot;: &quot;1235&quot;,
+          &quot;Email&quot;: &quot;&quot;,
+          &quot;Phone&quot;: &quot;&quot;,
+          &quot;Department&quot;: 0,
+          &quot;Position&quot;: 0,
+          &quot;Country&quot;: 0,
+          &quot;City&quot;: 0,
+          &quot;Ward&quot;: 0
+        },
+        {
+          &quot;_Id&quot;: &quot;Employee/3116129&quot;,
+          &quot;_rev&quot;: &quot;_aEqqdgS--_&quot;,
+          &quot;_key&quot;: 3116129,
+          &quot;FirstName&quot;: &quot;Quân&quot;,
+          &quot;LastName&quot;: &quot;Nguyễn&quot;,
+          &quot;FullName&quot;: &quot;Quân Nguyễn&quot;,
+          &quot;NameAcronymn&quot;: &quot;Q&quot;,
+          &quot;Avatar&quot;: &quot;&quot;,
+          &quot;DateOfBirth&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;PassCode&quot;: &quot;5678&quot;,
+          &quot;Email&quot;: &quot;quannguyen12@gmail.com&quot;,
+          &quot;Phone&quot;: &quot;093365789&quot;,
+          &quot;Department&quot;: 0,
+          &quot;Position&quot;: 0,
+          &quot;Country&quot;: 0,
+          &quot;City&quot;: 0,
+          &quot;Ward&quot;: 0
+        }
+      ],
+      &quot;ViewItemMode&quot;: [
+        {
+          &quot;ViewMode&quot;: [
+            {
+              &quot;Id&quot;: 3,
+              &quot;Title_vi&quot;: &quot;Màu&quot;,
+              &quot;Title_en&quot;: &quot;Color&quot;,
+              &quot;Handle&quot;: &quot;color&quot;,
+              &quot;OrderNo&quot;: 2,
+              &quot;Visible&quot;: 1,
+              &quot;Default&quot;: 0
+            }
+          ],
+          &quot;PictureMode&quot;: [
+            {
+              &quot;Id&quot;: 2,
+              &quot;Title_vi&quot;: &quot;Hình&quot;,
+              &quot;Title_en&quot;: &quot;Picture&quot;,
+              &quot;Handle&quot;: &quot;picture&quot;,
+              &quot;OrderNo&quot;: 1,
+              &quot;Visible&quot;: 1,
+              &quot;Default&quot;: 0
+            }
+          ]
+        }
+      ],
+      [x]&quot;Users&quot;: {
+        &quot;CustomerCode&quot;: &quot;0IRVDG&quot;,
+        &quot;BusinessName&quot;: &quot;Pendogo&quot;,
+        &quot;Language&quot;: &quot;[{\&quot;_Id\&quot;:\&quot;CustomerLanguages/1\&quot;,\&quot;_rev\&quot;:\&quot;_ajj6Uta---\&quot;,\&quot;_key\&quot;:1,\&quot;Flag\&quot;:\&quot;images/img_flag/United_States.png\&quot;,\&quot;Country\&quot;:null,\&quot;Code\&quot;:\&quot;en\&quot;,\&quot;Language\&quot;:\&quot;English (United States)\&quot;,\&quot;IsMain\&quot;:true,\&quot;OrderNo\&quot;:0,\&quot;Visible\&quot;:1},{\&quot;_Id\&quot;:\&quot;CustomerLanguages/2\&quot;,\&quot;_rev\&quot;:\&quot;_ajj6Uu----\&quot;,\&quot;_key\&quot;:2,\&quot;Flag\&quot;:\&quot;images/img_flag/Germany.png\&quot;,\&quot;Country\&quot;:null,\&quot;Code\&quot;:\&quot;de\&quot;,\&quot;Language\&quot;:\&quot;German (Germany)\&quot;,\&quot;IsMain\&quot;:false,\&quot;OrderNo\&quot;:1,\&quot;Visible\&quot;:1},{\&quot;_Id\&quot;:\&quot;CustomerLanguages/3\&quot;,\&quot;_rev\&quot;:\&quot;_ajj6Uum---\&quot;,\&quot;_key\&quot;:3,\&quot;Flag\&quot;:\&quot;images/img_flag/Viet_Nam.png\&quot;,\&quot;Country\&quot;:null,\&quot;Code\&quot;:\&quot;vi\&quot;,\&quot;Language\&quot;:\&quot;Vietnamese (Vietnam)\&quot;,\&quot;IsMain\&quot;:false,\&quot;OrderNo\&quot;:2,\&quot;Visible\&quot;:1}]&quot;,
+        &quot;CurrencyId&quot;: &quot;[\&quot;Đồng (₫)\&quot;]&quot;,
+        &quot;TimeZoneDisplayName&quot;: &quot;(UTC+07:00) Bangkok, Hanoi, Jakarta&quot;,
+        &quot;CurrencyNativeName&quot;: &quot;Đồng&quot;,
+        &quot;CurrencySymbol&quot;: &quot;₫&quot;
+      }[x]
+    }
+  ],
+  &quot;PageSize&quot;: 0,
+  &quot;PageNumber&quot;: 0,
+  &quot;ItemsCount&quot;: 0,
+  &quot;PageCount&quot;: -2147483648.0
+}
+</code></pre>
+
+
+</body>
+</html>

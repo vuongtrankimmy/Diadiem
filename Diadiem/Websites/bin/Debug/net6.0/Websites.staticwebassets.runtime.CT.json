@@ -1,0 +1,489 @@
+{
+  "ContentRoots": [
+    "/src/Websites/wwwroot/"
+  ],
+  "Root": {
+    "Children": {
+      "css": {
+        "Children": {
+          "modest.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/modest.css"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "documents": {
+        "Children": {
+          "changelog": {
+            "Children": {
+              "Changelog_v1.0.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.0.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.0.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.0.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.1.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.1.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.1.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.1.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.2.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.2.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.2.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.2.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.3.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.3.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.3.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.3.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.4.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.4.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.4.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.4.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.5.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.5.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.5.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.5.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.6.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.6.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.6.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.6.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.7.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.7.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.7.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.7.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.8.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.8.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.8.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.8.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.9.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.9.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v1.9.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v1.9.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v2.0.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v2.0.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v2.0.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v2.0.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v2.1.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v2.1.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v2.1.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v2.1.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.0.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.0.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.0.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.0.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.1.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.1.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.1.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.1.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.2.1.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.2.1.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.2.1.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.2.1.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.2.2.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.2.2.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.2.2.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.2.2.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.2.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.2.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.2.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.2.md"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.3.4.html": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.3.4.html"
+                },
+                "Patterns": null
+              },
+              "Changelog_v3.3.4.md": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "documents/changelog/Changelog_v3.3.4.md"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "swagger-ui": {
+        "Children": {
+          "custom.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "swagger-ui/custom.css"
+            },
+            "Patterns": null
+          },
+          "custom.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "swagger-ui/custom.js"
+            },
+            "Patterns": null
+          },
+          "resources": {
+            "Children": {
+              "favicon .ico": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "swagger-ui/resources/favicon .ico"
+                },
+                "Patterns": null
+              },
+              "favicon-16x16.ico": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "swagger-ui/resources/favicon-16x16.ico"
+                },
+                "Patterns": null
+              },
+              "favicon-16x16.png": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "swagger-ui/resources/favicon-16x16.png"
+                },
+                "Patterns": null
+              },
+              "favicon-32x32.png": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "swagger-ui/resources/favicon-32x32.png"
+                },
+                "Patterns": null
+              },
+              "favicon.ico": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "swagger-ui/resources/favicon.ico"
+                },
+                "Patterns": null
+              },
+              "logo.png": {
+                "Children": null,
+                "Asset": {
+                  "ContentRootIndex": 0,
+                  "SubPath": "swagger-ui/resources/logo.png"
+                },
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          },
+          "Swagger-Custom.js": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "swagger-ui/Swagger-Custom.js"
+            },
+            "Patterns": null
+          },
+          "translator": {
+            "Children": {
+              "china": {
+                "Children": {
+                  "china.js": {
+                    "Children": null,
+                    "Asset": {
+                      "ContentRootIndex": 0,
+                      "SubPath": "swagger-ui/translator/china/china.js"
+                    },
+                    "Patterns": null
+                  }
+                },
+                "Asset": null,
+                "Patterns": null
+              }
+            },
+            "Asset": null,
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "swagger": {
+        "Children": {
+          "favicon-16x16.ico": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "swagger/favicon-16x16.ico"
+            },
+            "Patterns": null
+          },
+          "favicon-16x16.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "swagger/favicon-16x16.png"
+            },
+            "Patterns": null
+          },
+          "favicon-32x32.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "swagger/favicon-32x32.png"
+            },
+            "Patterns": null
+          },
+          "favicon.ico": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "swagger/favicon.ico"
+            },
+            "Patterns": null
+          },
+          "logo.png": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "swagger/logo.png"
+            },
+            "Patterns": null
+          }
+        },
+        "Asset": null,
+        "Patterns": null
+      },
+      "test.html": {
+        "Children": null,
+        "Asset": {
+          "ContentRootIndex": 0,
+          "SubPath": "test.html"
+        },
+        "Patterns": null
+      }
+    },
+    "Asset": null,
+    "Patterns": [
+      {
+        "ContentRootIndex": 0,
+        "Pattern": "**",
+        "Depth": 0
+      }
+    ]
+  }
+}

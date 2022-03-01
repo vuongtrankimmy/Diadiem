@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Địa Điểm API v3.2.1</title>
+</head>
+<body>
+
+    <h1 id="ia-iem-api-v3.2.1">Địa Điểm API v3.2.1</h1>
+<h3 id="cap-nhat">Cập nhật</h3>
+<h2 id="frontend-user-27062020-v3.2.1"><code>FRONTEND USER *[27/06/2020]* v3.2.1</code></h2>
+<p>• <strong>Discount</strong> (3): Cập nhật thông tin Discounts. Cập nhật object ListSetSchedules, Chuyển đối tượng <strong>TimeOn,TimeOff</strong> từ Single đến Multiple và apply đến đối tượng <strong>ListSetTime</strong></p>
+<h2 id="frontend-user-26062020-v3.2"><code>FRONTEND USER *[26/06/2020]* v3.2</code></h2>
+<p>• <strong>Products</strong> (1): Cập nhật thông tin Modifier</p>
+<p>• <strong>Taxes</strong> (2): Cập nhật thông tin Taxes sử dụng cho item.</p>
+<p>• <strong>Discount</strong> (3): Cập nhật thông tin Discounts. Thêm Object <strong>ListDiscountsApplyToItem</strong> để xác định Discounts được gắn tới sản phẩm phù hợp. <strong>DiscountAutomatic</strong> nếu =True: code này sẽ được tự động apply đến order,Fasle: code này sẽ yêu cầu nhập trong order.</p>
+<p>• <strong>ListDeviceType</strong> (4): Loại hiển thị của thiết bị. Sử dụng để tắt/mở chức năng và custom giao diện phù hợp với thiết bị</p>
+<p>• <strong>api/orders</strong> (5): Hiển thị thông tin orders và cập nhật thông tin order</p>
+<p>(1)</p>
+<pre><code> &quot;Modifier&quot;: &quot;[{\&quot;ModifierGuid\&quot;:\&quot;Modifier/438214104\&quot;,\&quot;ModifierName\&quot;:\&quot;Pizza extra\&quot;}]&quot;
+</code></pre>
+<p>(2)</p>
+<pre><code> {&quot;Message&quot;:null,&quot;DidError&quot;:false,&quot;ErrorMessage&quot;:null,&quot;Model&quot;:[{&quot;ListTaxes&quot;:[{&quot;_id&quot;:&quot;CustomerTax/10&quot;,&quot;_key&quot;:10,&quot;Id&quot;:0,&quot;Name&quot;:&quot;Products&quot;,&quot;EnableTax&quot;:true,&quot;TaxValue&quot;:0.0,&quot;TaxIncludingMethodName&quot;:&quot;&quot;,&quot;TaxIncludingMethodId&quot;:null}],&quot;ListTaxesAssignToItem&quot;:null}]}
+</code></pre>
+<p>(3)</p>
+<pre><code> ListDiscountsApplyToItem&quot;: [
+        {
+          &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/9&quot;,
+          &quot;DiscountType&quot;: 4,
+          &quot;ApplyTo&quot;: 2,
+          &quot;ListParents&quot;: &quot;&quot;,
+          &quot;ListProducts&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/438210359\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Pork\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Chicken\&quot;,\&quot;OrderNo\&quot;:1}]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210356\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Rare\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Medium\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;Welldone\&quot;,\&quot;OrderNo\&quot;:2}]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210353\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Rare•Mushroom sauce\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Rare•Pepper sauce\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;Rare•Red wine sauce\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;Medium•Mushroom sauce\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;Medium•Pepper sauce\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;Medium•Red wine sauce\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;Well done•Mushroom sauce\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;Well done•Pepper sauce\&quot;,\&quot;OrderNo\&quot;:7},{\&quot;GroupName\&quot;:\&quot;Well done•Red wine sauce\&quot;,\&quot;OrderNo\&quot;:8}]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210345\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Ba;samic - olive oil\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Mustard sauce (w/olive oil - lemon)\&quot;,\&quot;OrderNo\&quot;:1}]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210329\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Caesar sauce (w/ anchovies)\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;More caesar sauce (w/ anchovies)\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;Add 1 more box caesar sauce (w/ anchovies)\&quot;,\&quot;OrderNo\&quot;:2}]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210293\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210292\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:7},{\&quot;GroupName\&quot;:\&quot;Bugutte•French fries•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:8},{\&quot;GroupName\&quot;:\&quot;Bugutte•French fries•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:9},{\&quot;GroupName\&quot;:\&quot;Bugutte•French fries•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:10},{\&quot;GroupName\&quot;:\&quot;Bugutte•French fries•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:11},{\&quot;GroupName\&quot;:\&quot;Bugutte•Salad•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:12},{\&quot;GroupName\&quot;:\&quot;Bugutte•Salad•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:13},{\&quot;GroupName\&quot;:\&quot;Bugutte•Salad•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:14},{\&quot;GroupName\&quot;:\&quot;Bugutte•Salad•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:15}]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210291\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:7},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:8},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:9},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:10},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:11}]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210290\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:7},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:8},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:9},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:10},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:11},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:12},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:13},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:14},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:15}]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210289\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;Sandwich•French fries•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;Sandwich•Salad•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:7},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:8},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:9},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:10},{\&quot;GroupName\&quot;:\&quot;Bagutte•French fries•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:11},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:12},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:13},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:14},{\&quot;GroupName\&quot;:\&quot;Bagutte•Salad•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:15}]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210288\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Sandwich•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Sandwich•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;Sandwich•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;Sandwich•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;Baguette•Mayonnaise sauce\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;Baguette•No mayonnaise\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;Baguette•More tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;Baguette•Add 1 more box of tartar sauce by side\&quot;,\&quot;OrderNo\&quot;:7}]}]&quot;,
+          &quot;UserGuid&quot;: &quot;Customer/438227755&quot;
+        },
+        {
+          &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/21&quot;,
+          &quot;DiscountType&quot;: 1,
+          &quot;ApplyTo&quot;: 3,
+          &quot;ListParents&quot;: &quot;[{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/28\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/25\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/24\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/21\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/20\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/19\&quot;}]&quot;,
+          &quot;ListProducts&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/438210351\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210350\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210347\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210336\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/438210335\&quot;,\&quot;ListVariant\&quot;:[]}]&quot;,
+          &quot;UserGuid&quot;: &quot;Customer/438227755&quot;
+        },
+        {
+          &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/10&quot;,
+          &quot;DiscountType&quot;: 4,
+          &quot;ApplyTo&quot;: 2,
+          &quot;ListParents&quot;: &quot;&quot;,
+          &quot;ListProducts&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/438210239\&quot;,\&quot;ListVariant\&quot;:[]}]&quot;,
+          &quot;UserGuid&quot;: &quot;Customer/438227755&quot;
+        }
+      ]
+</code></pre>
+<p>(4)</p>
+<pre><code>ListDeviceType&quot;: [
+        {
+          &quot;Id&quot;: 1,
+          &quot;Title&quot;: &quot;Restaurant Table&quot;
+        },
+        {
+          &quot;Id&quot;: 2,
+          &quot;Title&quot;: &quot;Retaurant No Table&quot;
+        },
+        {
+          &quot;Id&quot;: 3,
+          &quot;Title&quot;: &quot;Shop&quot;
+        },
+        {
+          &quot;Id&quot;: 4,
+          &quot;Title&quot;: &quot;Spa&quot;
+        }
+      ]
+</code></pre>
+<p>(5)</p>
+<pre><code>{
+  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      &quot;_key&quot;: &quot;4&quot;,
+      &quot;_id&quot;: &quot;Orders/4&quot;,
+      &quot;_rev&quot;: &quot;_asPiCmi--A&quot;,
+      &quot;OrderGuid&quot;: &quot;AXLhB7qpKhSfkzkwHdJA&quot;,
+      &quot;OrderId&quot;: 4,
+      &quot;OrderCode&quot;: &quot;#SGM86694857&quot;,
+      &quot;Billing&quot;: {
+        &quot;Customer&quot;: {
+          &quot;Name&quot;: &quot;Nicolai&quot;,
+          &quot;Email&quot;: &quot;outrunshark462@gmail.com&quot;,
+          &quot;Phone&quot;: &quot;0777791268&quot;,
+          &quot;Company&quot;: &quot;&quot;
+        },
+        &quot;Address&quot;: {
+          &quot;CityId&quot;: 8,
+          &quot;CityName&quot;: &quot;Hồ Chí Minh&quot;,
+          &quot;DistrictId&quot;: 31,
+          &quot;DistrictName&quot;: &quot;2&quot;,
+          &quot;WardId&quot;: 684,
+          &quot;WardName&quot;: &quot;Thảo Điền&quot;,
+          &quot;Street&quot;: &quot;40/11 Xuan Thuy&quot;,
+          &quot;TypeAddressId&quot;: 1,
+          &quot;TypeAddress&quot;: &quot;house&quot;,
+          &quot;TypeAddressInfo&quot;: &quot;[]&quot;
+        }
+      },
+      &quot;Shipping&quot;: {
+        &quot;Customer&quot;: {
+          &quot;Name&quot;: &quot;Nicolai&quot;,
+          &quot;Email&quot;: &quot;outrunshark462@gmail.com&quot;,
+          &quot;Phone&quot;: &quot;0777791268&quot;,
+          &quot;Company&quot;: &quot;&quot;
+        },
+        &quot;Address&quot;: {
+          &quot;CityId&quot;: 0,
+          &quot;CityName&quot;: &quot;&quot;,
+          &quot;DistrictId&quot;: 0,
+          &quot;DistrictName&quot;: &quot;&quot;,
+          &quot;WardId&quot;: 0,
+          &quot;WardName&quot;: &quot;&quot;,
+          &quot;Street&quot;: &quot;&quot;,
+          &quot;TypeAddressId&quot;: 0,
+          &quot;TypeAddress&quot;: &quot;&quot;,
+          &quot;TypeAddressInfo&quot;: &quot;&quot;
+        }
+      },
+      &quot;OrderDetail&quot;: [
+        {
+          &quot;OrderDetailId&quot;: 1,
+          &quot;OrderGuid&quot;: &quot;AXLhB7qpKhSfkzkwHdJA&quot;,
+          &quot;ProductGuid&quot;: &quot;AXLG86EQKhSfkzkwHdHr&quot;,
+          &quot;Name&quot;: &quot;Salami piccante (spicy)&quot;,
+          &quot;Name1&quot;: &quot;&quot;,
+          &quot;Sku&quot;: &quot;&quot;,
+          &quot;Variants&quot;: &quot;&quot;,
+          &quot;Url&quot;: &quot;&quot;,
+          &quot;ListExtra&quot;: [
+            {
+              &quot;Name&quot;: &quot;Onion&quot;,
+              &quot;Url&quot;: &quot;&quot;,
+              &quot;Price&quot;: 20000,
+              &quot;Quantity&quot;: 1,
+              &quot;Total&quot;: 20000
+            }
+          ],
+          &quot;ListPromotion&quot;: [
+            
+          ],
+          &quot;Price&quot;: 190000,
+          &quot;Quantity&quot;: 1,
+          &quot;Total&quot;: 190000,
+          &quot;LineTax&quot;: 0,
+          &quot;LineService&quot;: 0,
+          &quot;DiscountCode&quot;: &quot;&quot;,
+          &quot;LineDiscount&quot;: 0,
+          &quot;LineTotal&quot;: 210000,
+          &quot;CreateDate&quot;: &quot;2020/06/23 18:54:40&quot;,
+          &quot;Note&quot;: &quot;&quot;,
+          &quot;Status&quot;: 1
+        },
+        {
+          &quot;OrderDetailId&quot;: 2,
+          &quot;OrderGuid&quot;: &quot;AXLhB7qpKhSfkzkwHdJA&quot;,
+          &quot;ProductGuid&quot;: &quot;AWoQ8jgbz8kMBxcmEkqq&quot;,
+          &quot;Name&quot;: &quot;I do not want that&quot;,
+          &quot;Name1&quot;: &quot;&quot;,
+          &quot;Sku&quot;: &quot;&quot;,
+          &quot;Variants&quot;: &quot;&quot;,
+          &quot;Url&quot;: &quot;&quot;,
+          &quot;ListExtra&quot;: [
+            
+          ],
+          &quot;ListPromotion&quot;: [
+            
+          ],
+          &quot;Price&quot;: 95000,
+          &quot;Quantity&quot;: 1,
+          &quot;Total&quot;: 95000,
+          &quot;LineTax&quot;: 0,
+          &quot;LineService&quot;: 0,
+          &quot;DiscountCode&quot;: &quot;&quot;,
+          &quot;LineDiscount&quot;: 0,
+          &quot;LineTotal&quot;: 95000,
+          &quot;CreateDate&quot;: &quot;2020/06/23 18:54:40&quot;,
+          &quot;Note&quot;: &quot;&quot;,
+          &quot;Status&quot;: 1
+        }
+      ],
+      &quot;SubTotal&quot;: 305000,
+      &quot;DiscountCode&quot;: &quot;&quot;,
+      &quot;DiscountValue&quot;: 0,
+      &quot;Tax&quot;: 0,
+      &quot;ShippingFee&quot;: 0,
+      &quot;ServiceFee&quot;: 15250,
+      &quot;GrandTotal&quot;: 320250,
+      &quot;PaymentAmount&quot;: 0,
+      &quot;Balance&quot;: 305000,
+      &quot;Status&quot;: 1,
+      &quot;PaymentTypeId&quot;: 1,
+      &quot;PaymentType&quot;: &quot;COD&quot;,
+      &quot;Notes&quot;: &quot;&quot;,
+      &quot;CreateDate&quot;: &quot;2020/06/23 18:54:40&quot;,
+      &quot;DeviceGuid&quot;: &quot;Device/438231124&quot;,
+      &quot;LocationGuid&quot;: &quot;Location/425242113&quot;,
+      &quot;UserGuid&quot;: &quot;Customer/438227755&quot;,
+      &quot;EmployeeGuid&quot;: &quot;Employee/3116129&quot;,
+      &quot;DeliveryTypeId&quot;: 2,
+      &quot;DeliveryType&quot;: &quot;delivery&quot;,
+      &quot;OrderTime&quot;: null,
+      &quot;OrderTimeLater&quot;: null,
+      &quot;HourPickup&quot;: &quot;&quot;,
+      &quot;Device&quot;: null
+    }
+  ]
+}
+</code></pre>
+
+
+</body>
+</html>

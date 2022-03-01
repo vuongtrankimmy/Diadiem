@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Địa Điểm API v3.1</title>
+</head>
+<body>
+
+    <h1 id="ia-iem-api-v3.1">Địa Điểm API v3.1</h1>
+<h3 id="cap-nhat">Cập nhật</h3>
+<h2 id="frontend-user-20062020"><code>FRONTEND USER *[20/06/2020]*</code></h2>
+<p>• <strong>ListDiningOptions</strong>: Lựa chọn ăn uống theo Location</p>
+<ul>
+<li><strong>ListVoid and ListComp</strong> : Ghi chú lý do của order.</li>
+</ul>
+<p>Example: <strong>api/order/settings?UserGuid=Customer/20&amp;LocationGuid=Location/18</strong></p>
+<pre><code>{
+  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      &quot;ListComp&quot;: [
+        {
+          &quot;Id&quot;: 1,
+          &quot;GroupName&quot;: &quot;Comp Reasons&quot;,
+          &quot;ListReasons&quot;: [
+            {
+              &quot;Id&quot;: 1,
+              &quot;Title&quot;: &quot;Entry error&quot;,
+              &quot;Visible&quot;: 1
+            },
+            {
+              &quot;Id&quot;: 2,
+              &quot;Title&quot;: &quot;Customer changeed mind&quot;,
+              &quot;Visible&quot;: 1
+            },
+            {
+              &quot;Id&quot;: 3,
+              &quot;Title&quot;: &quot;Customer compaint&quot;,
+              &quot;Visible&quot;: 1
+            },
+            {
+              &quot;Id&quot;: 4,
+              &quot;Title&quot;: &quot;Friends and family&quot;,
+              &quot;Visible&quot;: 1
+            },
+            {
+              &quot;Id&quot;: 5,
+              &quot;Title&quot;: &quot;Employee discount&quot;,
+              &quot;Visible&quot;: 1
+            },
+            {
+              &quot;Id&quot;: 6,
+              &quot;Title&quot;: &quot;Manager special&quot;,
+              &quot;Visible&quot;: 1
+            }
+          ]
+        }
+      ],
+      &quot;ListVoid&quot;: [
+        {
+          &quot;Id&quot;: 2,
+          &quot;GroupName&quot;: &quot;Void Reasons&quot;,
+          &quot;ListReasons&quot;: [
+            {
+              &quot;Id&quot;: 7,
+              &quot;Title&quot;: &quot;Entry error&quot;,
+              &quot;Visible&quot;: 1
+            },
+            {
+              &quot;Id&quot;: 8,
+              &quot;Title&quot;: &quot;Item no longer available&quot;,
+              &quot;Visible&quot;: 1
+            },
+            {
+              &quot;Id&quot;: 9,
+              &quot;Title&quot;: &quot;Customer changed mind&quot;,
+              &quot;Visible&quot;: 1
+            }
+          ]
+        }
+      ],
+      &quot;ListDiningOptions&quot;: [
+        {
+          &quot;Id&quot;: 4,
+          &quot;Title&quot;: &quot;For Here&quot;,
+          &quot;OrderNo&quot;: 0
+        },
+        {
+          &quot;Id&quot;: 3,
+          &quot;Title&quot;: &quot;To Go&quot;,
+          &quot;OrderNo&quot;: 1
+        },
+        {
+          &quot;Id&quot;: 2,
+          &quot;Title&quot;: &quot;Delivery&quot;,
+          &quot;OrderNo&quot;: 2
+        },
+        {
+          &quot;Id&quot;: 1,
+          &quot;Title&quot;: &quot;Pickup&quot;,
+          &quot;OrderNo&quot;: 3
+        }
+      ]
+    }
+  ]
+}
+
+</code></pre>
+
+
+</body>
+</html>

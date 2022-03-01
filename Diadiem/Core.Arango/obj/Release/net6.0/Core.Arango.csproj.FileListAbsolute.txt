@@ -1,0 +1,12 @@
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\bin\Release\net6.0\Core.Arango.deps.json
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\bin\Release\net6.0\Core.Arango.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\bin\Release\net6.0\ref\Core.Arango.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\bin\Release\net6.0\Core.Arango.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\obj\Release\net6.0\Core.Arango.GeneratedMSBuildEditorConfig.editorconfig
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\obj\Release\net6.0\Core.Arango.AssemblyInfoInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\obj\Release\net6.0\Core.Arango.AssemblyInfo.cs
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\obj\Release\net6.0\Core.Arango.csproj.CoreCompileInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\obj\Release\net6.0\Core.Arango.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\obj\Release\net6.0\ref\Core.Arango.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\obj\Release\net6.0\Core.Arango.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Core.Arango\obj\Release\net6.0\Core.Arango.csproj.AssemblyReference.cache

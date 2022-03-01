@@ -1,0 +1,34 @@
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\bin\Debug\net6.0\Helpers.deps.json
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\bin\Debug\net6.0\Helpers.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\bin\Debug\net6.0\ref\Helpers.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\bin\Debug\net6.0\Helpers.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\obj\Debug\net6.0\Helpers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\obj\Debug\net6.0\Helpers.AssemblyInfoInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\obj\Debug\net6.0\Helpers.AssemblyInfo.cs
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\obj\Debug\net6.0\Helpers.csproj.CoreCompileInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\obj\Debug\net6.0\Helpers.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\obj\Debug\net6.0\ref\Helpers.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\obj\Debug\net6.0\Helpers.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Helpers\obj\Debug\net6.0\Helpers.csproj.AssemblyReference.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\bin\Debug\net6.0\Helpers.deps.json
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\bin\Debug\net6.0\Helpers.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\bin\Debug\net6.0\ref\Helpers.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\bin\Debug\net6.0\Helpers.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\obj\Debug\net6.0\Helpers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\obj\Debug\net6.0\Helpers.AssemblyInfoInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\obj\Debug\net6.0\Helpers.AssemblyInfo.cs
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\obj\Debug\net6.0\Helpers.csproj.CoreCompileInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\obj\Debug\net6.0\Helpers.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\obj\Debug\net6.0\ref\Helpers.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Helpers\obj\Debug\net6.0\Helpers.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\bin\Debug\net6.0\Helpers.deps.json
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\bin\Debug\net6.0\Helpers.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\bin\Debug\net6.0\ref\Helpers.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\bin\Debug\net6.0\Helpers.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Debug\net6.0\Helpers.GeneratedMSBuildEditorConfig.editorconfig
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Debug\net6.0\Helpers.AssemblyInfoInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Debug\net6.0\Helpers.AssemblyInfo.cs
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Debug\net6.0\Helpers.csproj.CoreCompileInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Debug\net6.0\Helpers.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Debug\net6.0\ref\Helpers.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Debug\net6.0\Helpers.pdb

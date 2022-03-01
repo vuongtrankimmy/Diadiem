@@ -1,0 +1,11 @@
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\bin\Release\net6.0\Helpers.deps.json
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\bin\Release\net6.0\Helpers.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\bin\Release\net6.0\ref\Helpers.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\bin\Release\net6.0\Helpers.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Release\net6.0\Helpers.GeneratedMSBuildEditorConfig.editorconfig
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Release\net6.0\Helpers.AssemblyInfoInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Release\net6.0\Helpers.AssemblyInfo.cs
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Release\net6.0\Helpers.csproj.CoreCompileInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Release\net6.0\Helpers.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Release\net6.0\ref\Helpers.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Helpers\obj\Release\net6.0\Helpers.pdb

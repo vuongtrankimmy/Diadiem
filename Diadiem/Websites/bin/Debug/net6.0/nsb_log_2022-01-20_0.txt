@@ -1,0 +1,6 @@
+﻿2022-01-20 11:06:50.002 INFO  Logging to 'D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\bin\Debug\net6.0\' with level Info
+2022-01-20 11:06:50.124 INFO  No valid license could be found. Falling back to trial license with start date '2022-01-19'.
+2022-01-20 11:23:24.052 INFO  Logging to 'D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\bin\Debug\net6.0\' with level Info
+2022-01-20 11:23:24.207 INFO  No valid license could be found. Falling back to trial license with start date '2022-01-19'.
+2022-01-20 11:24:10.576 INFO  Logging to 'D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Websites\bin\Debug\net6.0\' with level Info
+2022-01-20 11:24:10.689 INFO  No valid license could be found. Falling back to trial license with start date '2022-01-19'.

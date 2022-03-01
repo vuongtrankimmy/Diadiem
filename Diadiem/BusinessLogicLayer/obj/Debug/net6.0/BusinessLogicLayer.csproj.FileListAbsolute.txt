@@ -1,0 +1,34 @@
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\bin\Debug\net6.0\BusinessLogicLayer.deps.json
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\bin\Debug\net6.0\BusinessLogicLayer.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\bin\Debug\net6.0\ref\BusinessLogicLayer.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\bin\Debug\net6.0\BusinessLogicLayer.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\bin\Debug\net6.0\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\bin\Debug\net6.0\Entities.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\bin\Debug\net6.0\en-US\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\bin\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.csproj.CopyComplete
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\obj\Debug\net6.0\ref\BusinessLogicLayer.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\bin\Debug\net6.0\BusinessLogicLayer.deps.json
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\bin\Debug\net6.0\BusinessLogicLayer.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\bin\Debug\net6.0\ref\BusinessLogicLayer.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\bin\Debug\net6.0\BusinessLogicLayer.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\bin\Debug\net6.0\Entities.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\bin\Debug\net6.0\Entities.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\bin\Debug\net6.0\en-US\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\bin\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.csproj.CopyComplete
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\obj\Debug\net6.0\ref\BusinessLogicLayer.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\BusinessLogicLayer\obj\Debug\net6.0\BusinessLogicLayer.pdb

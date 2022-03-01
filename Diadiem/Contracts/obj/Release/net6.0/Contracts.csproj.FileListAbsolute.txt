@@ -1,0 +1,17 @@
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Release\net6.0\Contracts.deps.json
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Release\net6.0\Contracts.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Release\net6.0\ref\Contracts.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Release\net6.0\Contracts.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Release\net6.0\Entities.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Release\net6.0\Entities.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Release\net6.0\en-US\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Release\net6.0\vi-VN\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Release\net6.0\Contracts.csproj.AssemblyReference.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Release\net6.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Release\net6.0\Contracts.AssemblyInfoInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Release\net6.0\Contracts.AssemblyInfo.cs
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Release\net6.0\Contracts.csproj.CoreCompileInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Release\net6.0\Contracts.csproj.CopyComplete
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Release\net6.0\Contracts.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Release\net6.0\ref\Contracts.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Release\net6.0\Contracts.pdb

@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Địa Điểm API v3.2.2</title>
+</head>
+<body>
+
+    <h1 id="ia-iem-api-v3.2.2">Địa Điểm API v3.2.2</h1>
+<h3 id="cap-nhat">Cập nhật</h3>
+<h2 id="frontend-user-08072020-v3.2.2"><code>FRONTEND USER *[08/07/2020]* v3.2.2</code></h2>
+<p>• <strong>Discount</strong> (1): Cập nhật thông tin Discounts. Cập nhật object Chỉ lấy những Discount với DiscountType:</p>
+<pre><code>• (4): Buy X Get Y
+
+• (5): Combo (Beginning)
+
+• (6): Gift (Comming soon)
+</code></pre>
+<p>• <strong>Taxes</strong> (2): Remove object này (Lỗi thiếu object xử lý)</p>
+<p>• <strong>Fees</strong> (3): Thêm mới Object để hiển thị thông tin tính cho Subtotal &amp; Total của Order theo 2 Group</p>
+<pre><code>• (1): Subtotal: Những Phí được tính theo sản phẩm/item
+
+    •• (1): Shipping or Delivery
+    
+    •• (2): Discount
+    
+    •• (3): Service or Addon
+
+    •• (4): Surcharge
+    
+    •• (5): Tax
+    
+    •• (6): NA
+
+• (2): Total: Những Phí được tính theo Order sau khi có Subtotal
+
+    •• (7): Total Shipping or Delivery
+    
+    •• (8): Discount
+    
+    •• (9): Service or Addon
+
+    •• (10): Surcharge
+    
+    •• (11): Tax
+    
+    •• (12): NA
+
+
+• (5): Combo (Beginning)
+
+• (6): Gift (Comming soon)
+</code></pre>
+<p>(2)</p>
+<pre><code> {&quot;Message&quot;:null,&quot;DidError&quot;:false,&quot;ErrorMessage&quot;:null,&quot;Model&quot;:[{&quot;ListTaxes&quot;:[{&quot;_id&quot;:&quot;CustomerTax/10&quot;,&quot;_key&quot;:10,&quot;Id&quot;:0,&quot;Name&quot;:&quot;Products&quot;,&quot;EnableTax&quot;:true,&quot;TaxValue&quot;:0.0,&quot;TaxIncludingMethodName&quot;:&quot;&quot;,&quot;TaxIncludingMethodId&quot;:null}],&quot;ListTaxesAssignToItem&quot;:null}]}
+</code></pre>
+<p>(3)</p>
+<pre><code>{
+  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      &quot;GroupId&quot;: 1,
+      &quot;GroupTitle&quot;: &quot;Subtotal&quot;,
+      &quot;ListSettings&quot;: [
+        {
+          &quot;Id&quot;: 1,
+          &quot;Title&quot;: &quot;Shipping Or Delivery&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 1,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            
+          ]
+        },
+        {
+          &quot;Id&quot;: 2,
+          &quot;Title&quot;: &quot;Discount&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 1,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            {
+              &quot;ListDiscounts&quot;: [
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/12&quot;,
+                  &quot;DiscountName&quot;: &quot;Giao hàng miễn phí&quot;,
+                  &quot;DiscountType&quot;: 3,
+                  &quot;DiscountAutomatic&quot;: true,
+                  &quot;Acronymn&quot;: &quot;&amp;AMP;NBSP;&quot;,
+                  &quot;Color&quot;: &quot;#ddd&quot;,
+                  &quot;AssignTo&quot;: 1,
+                  &quot;DiscountCode&quot;: &quot;SDP5H4&quot;,
+                  &quot;MinimumRequiredType&quot;: 2,
+                  &quot;MinimumRequired&quot;: &quot;&quot;,
+                  &quot;CustomerEligibility&quot;: 1,
+                  &quot;UsageLimits&quot;: &quot;[{\&quot;Id\&quot;:1,\&quot;Limit\&quot;:10},{\&quot;Id\&quot;:2,\&quot;Limit\&quot;:0}]&quot;,
+                  &quot;SetSchedules&quot;: 0,
+                  &quot;ListSchedules&quot;: &quot;[]&quot;,
+                  &quot;DateRange&quot;: 0,
+                  &quot;DateOn&quot;: &quot;&quot;,
+                  &quot;DateOff&quot;: &quot;&quot;
+                },
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/7&quot;,
+                  &quot;DiscountName&quot;: &quot;Khuyến mãi&quot;,
+                  &quot;DiscountType&quot;: 1,
+                  &quot;DiscountAutomatic&quot;: true,
+                  &quot;Acronymn&quot;: &quot;&amp;AMP;NBSP;&quot;,
+                  &quot;Color&quot;: &quot;#ddd&quot;,
+                  &quot;AssignTo&quot;: 1,
+                  &quot;DiscountCode&quot;: &quot;99UB29&quot;,
+                  &quot;MinimumRequiredType&quot;: 2,
+                  &quot;MinimumRequired&quot;: &quot;[{\&quot;Id\&quot;:2,\&quot;Value\&quot;:0}]&quot;,
+                  &quot;CustomerEligibility&quot;: 2,
+                  &quot;UsageLimits&quot;: &quot;[{\&quot;Id\&quot;:1,\&quot;Limit\&quot;:20},{\&quot;Id\&quot;:2,\&quot;Limit\&quot;:0}]&quot;,
+                  &quot;SetSchedules&quot;: 0,
+                  &quot;ListSchedules&quot;: &quot;[]&quot;,
+                  &quot;DateRange&quot;: 0,
+                  &quot;DateOn&quot;: &quot;&quot;,
+                  &quot;DateOff&quot;: &quot;&quot;
+                },
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/9&quot;,
+                  &quot;DiscountName&quot;: &quot;Khuyến mãi tháng 10&quot;,
+                  &quot;DiscountType&quot;: 2,
+                  &quot;DiscountAutomatic&quot;: true,
+                  &quot;Acronymn&quot;: &quot;KMT&quot;,
+                  &quot;Color&quot;: &quot;#4ea942&quot;,
+                  &quot;AssignTo&quot;: 1,
+                  &quot;DiscountCode&quot;: &quot;JWS49D&quot;,
+                  &quot;MinimumRequiredType&quot;: 2,
+                  &quot;MinimumRequired&quot;: &quot;[{\&quot;Id\&quot;:2,\&quot;Value\&quot;:0}]&quot;,
+                  &quot;CustomerEligibility&quot;: 2,
+                  &quot;UsageLimits&quot;: &quot;[{\&quot;Id\&quot;:1,\&quot;Limit\&quot;:10},{\&quot;Id\&quot;:2,\&quot;Limit\&quot;:0}]&quot;,
+                  &quot;SetSchedules&quot;: 1,
+                  &quot;ListSchedules&quot;: &quot;[{\&quot;Id\&quot;:\&quot;2\&quot;,\&quot;Date\&quot;:\&quot;Monday\&quot;,\&quot;ListSetTime\&quot;:[{\&quot;TimeOn\&quot;:\&quot;12:56\&quot;,\&quot;TimeOff\&quot;:\&quot;13:52\&quot;,\&quot;OrderNo\&quot;:0}]},{\&quot;Id\&quot;:\&quot;3\&quot;,\&quot;Date\&quot;:\&quot;Tuesday\&quot;,\&quot;ListSetTime\&quot;:[{\&quot;TimeOn\&quot;:\&quot;01:52\&quot;,\&quot;TimeOff\&quot;:\&quot;20:54\&quot;,\&quot;OrderNo\&quot;:0}]},{\&quot;Id\&quot;:\&quot;4\&quot;,\&quot;Date\&quot;:\&quot;Webnesday\&quot;,\&quot;ListSetTime\&quot;:[{\&quot;TimeOn\&quot;:\&quot;12:51\&quot;,\&quot;TimeOff\&quot;:\&quot;17:55\&quot;,\&quot;OrderNo\&quot;:0}]},{\&quot;Id\&quot;:\&quot;5\&quot;,\&quot;Date\&quot;:\&quot;Thursday\&quot;,\&quot;ListSetTime\&quot;:[{\&quot;TimeOn\&quot;:\&quot;13:51\&quot;,\&quot;TimeOff\&quot;:\&quot;19:51\&quot;,\&quot;OrderNo\&quot;:0}]},{\&quot;Id\&quot;:\&quot;6\&quot;,\&quot;Date\&quot;:\&quot;Friday\&quot;,\&quot;ListSetTime\&quot;:[{\&quot;TimeOn\&quot;:\&quot;15:57\&quot;,\&quot;TimeOff\&quot;:\&quot;21:52\&quot;,\&quot;OrderNo\&quot;:0}]},{\&quot;Id\&quot;:\&quot;7\&quot;,\&quot;Date\&quot;:\&quot;Saturday\&quot;,\&quot;ListSetTime\&quot;:[{\&quot;TimeOn\&quot;:\&quot;16:52\&quot;,\&quot;TimeOff\&quot;:\&quot;20:52\&quot;,\&quot;OrderNo\&quot;:0}]},{\&quot;Id\&quot;:\&quot;1\&quot;,\&quot;Date\&quot;:\&quot;Sunday\&quot;,\&quot;ListSetTime\&quot;:[{\&quot;TimeOn\&quot;:\&quot;13:53\&quot;,\&quot;TimeOff\&quot;:\&quot;16:59\&quot;,\&quot;OrderNo\&quot;:0}]}]&quot;,
+                  &quot;DateRange&quot;: 1,
+                  &quot;DateOn&quot;: &quot;2020/05/06 08:00&quot;,
+                  &quot;DateOff&quot;: &quot;2020/09/30 17:00&quot;
+                },
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/5&quot;,
+                  &quot;DiscountName&quot;: &quot;Chuong trinh giam gia 50%&quot;,
+                  &quot;DiscountType&quot;: 1,
+                  &quot;DiscountAutomatic&quot;: true,
+                  &quot;Acronymn&quot;: &quot;CTGG&quot;,
+                  &quot;Color&quot;: &quot;#ddd&quot;,
+                  &quot;AssignTo&quot;: 1,
+                  &quot;DiscountCode&quot;: &quot;5GXKHU&quot;,
+                  &quot;MinimumRequiredType&quot;: 2,
+                  &quot;MinimumRequired&quot;: &quot;[{\&quot;Id\&quot;:2,\&quot;Value\&quot;:0}]&quot;,
+                  &quot;CustomerEligibility&quot;: 1,
+                  &quot;UsageLimits&quot;: &quot;[{\&quot;Id\&quot;:1,\&quot;Limit\&quot;:20},{\&quot;Id\&quot;:2,\&quot;Limit\&quot;:0}]&quot;,
+                  &quot;SetSchedules&quot;: 0,
+                  &quot;ListSchedules&quot;: &quot;[]&quot;,
+                  &quot;DateRange&quot;: 0,
+                  &quot;DateOn&quot;: &quot;&quot;,
+                  &quot;DateOff&quot;: &quot;&quot;
+                }
+              ],
+              &quot;ListDiscountsCondition&quot;: [
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/12&quot;,
+                  &quot;DiscountType&quot;: 3,
+                  &quot;Conditions&quot;: [
+                    {
+                      &quot;_Id&quot;: &quot;Discounts_FreeShipping/3&quot;,
+                      &quot;_rev&quot;: &quot;_as9Tdr2--_&quot;,
+                      &quot;_key&quot;: 3,
+                      &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/12&quot;,
+                      &quot;DiscountType&quot;: 3,
+                      &quot;AppliesTo&quot;: 1,
+                      &quot;OnlyApplyDiscount&quot;: 1,
+                      &quot;ListFromItem&quot;: &quot;[{\&quot;GroupGuid\&quot;:\&quot;704\&quot;,\&quot;Name\&quot;:\&quot;Viet Nam\&quot;}]&quot;
+                    }
+                  ]
+                },
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/7&quot;,
+                  &quot;DiscountType&quot;: 1,
+                  &quot;Conditions&quot;: [
+                    {
+                      &quot;_Id&quot;: &quot;Discounts_Percentage/10&quot;,
+                      &quot;_rev&quot;: &quot;_awyA67i--_&quot;,
+                      &quot;_key&quot;: 10,
+                      &quot;DiscountType&quot;: 1,
+                      &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/7&quot;,
+                      &quot;DiscountValue&quot;: 0.0,
+                      &quot;AppliesTo&quot;: 4,
+                      &quot;ListFromItem&quot;: &quot;[{\&quot;CategoryGuid\&quot;:\&quot;Category/1329628\&quot;,\&quot;Name\&quot;:\&quot;Pizza\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329667\&quot;,\&quot;Name\&quot;:\&quot;Pendogo - Lunch Set\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329659\&quot;,\&quot;Name\&quot;:\&quot;Buy 1 Get 1 Free\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329663\&quot;,\&quot;Name\&quot;:\&quot;Kids Menu\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329657\&quot;,\&quot;Name\&quot;:\&quot;Special Of The Month\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329631\&quot;,\&quot;Name\&quot;:\&quot;Appetizers\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329633\&quot;,\&quot;Name\&quot;:\&quot;Homemade Pasta\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329635\&quot;,\&quot;Name\&quot;:\&quot;Pasta\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329641\&quot;,\&quot;Name\&quot;:\&quot;Soup\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329643\&quot;,\&quot;Name\&quot;:\&quot;Risotti\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329645\&quot;,\&quot;Name\&quot;:\&quot;Main Course\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329647\&quot;,\&quot;Name\&quot;:\&quot;Side Dishes\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329649\&quot;,\&quot;Name\&quot;:\&quot;Sandwich\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329651\&quot;,\&quot;Name\&quot;:\&quot;Dessert\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329653\&quot;,\&quot;Name\&quot;:\&quot;Special\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329655\&quot;,\&quot;Name\&quot;:\&quot;Drinks &amp; Beer\&quot;}]&quot;
+                    }
+                  ]
+                },
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/9&quot;,
+                  &quot;DiscountType&quot;: 2,
+                  &quot;Conditions&quot;: [
+                    {
+                      &quot;_Id&quot;: &quot;Discounts_FixedAmount/2&quot;,
+                      &quot;_rev&quot;: &quot;_awyLwEO--_&quot;,
+                      &quot;_key&quot;: 2,
+                      &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/9&quot;,
+                      &quot;DiscountType&quot;: 2,
+                      &quot;DiscountValue&quot;: 30000.0,
+                      &quot;AppliesTo&quot;: 3,
+                      &quot;ListFromItem&quot;: &quot;[{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/59\&quot;,\&quot;Name\&quot;:\&quot;Dessert\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/55\&quot;,\&quot;Name\&quot;:\&quot;Monday Meatless Discount\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/54\&quot;,\&quot;Name\&quot;:\&quot;khuyen mai\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/51\&quot;,\&quot;Name\&quot;:\&quot;Top 10 Pasta Discount\&quot;}]&quot;
+                    }
+                  ]
+                },
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/5&quot;,
+                  &quot;DiscountType&quot;: 1,
+                  &quot;Conditions&quot;: [
+                    {
+                      &quot;_Id&quot;: &quot;Discounts_Percentage/12&quot;,
+                      &quot;_rev&quot;: &quot;_awyMjqi--_&quot;,
+                      &quot;_key&quot;: 12,
+                      &quot;DiscountType&quot;: 1,
+                      &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/5&quot;,
+                      &quot;DiscountValue&quot;: 20.0,
+                      &quot;AppliesTo&quot;: 2,
+                      &quot;ListFromItem&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/27\&quot;,\&quot;Name\&quot;:\&quot;Pizza - Go\&quot;,\&quot;ListVariant\&quot;:[],\&quot;TotalVariant\&quot;:0,\&quot;TotalVariantChecked\&quot;:0},{\&quot;ProductGuid\&quot;:\&quot;Product/22\&quot;,\&quot;Name\&quot;:\&quot;Pendo - Dinner\&quot;,\&quot;ListVariant\&quot;:[],\&quot;TotalVariant\&quot;:0,\&quot;TotalVariantChecked\&quot;:0},{\&quot;ProductGuid\&quot;:\&quot;Product/21\&quot;,\&quot;Name\&quot;:\&quot;Appetizers\&quot;,\&quot;ListVariant\&quot;:[],\&quot;TotalVariant\&quot;:0,\&quot;TotalVariantChecked\&quot;:0},{\&quot;ProductGuid\&quot;:\&quot;Product/20\&quot;,\&quot;Name\&quot;:\&quot;Pizza - Dinner\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;S•White\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;S•Black\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;M•White\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;M•Black\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;L•White\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;L•Black\&quot;,\&quot;OrderNo\&quot;:5}],\&quot;TotalVariant\&quot;:6,\&quot;TotalVariantChecked\&quot;:6},{\&quot;ProductGuid\&quot;:\&quot;Product/19\&quot;,\&quot;Name\&quot;:\&quot;Lasagne classica\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;S•White\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;S•Black\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;S•Blue\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;M•White\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;M•Black\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;M•Blue\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;L•White\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;L•Black\&quot;,\&quot;OrderNo\&quot;:7},{\&quot;GroupName\&quot;:\&quot;L•Blue\&quot;,\&quot;OrderNo\&quot;:8}],\&quot;TotalVariant\&quot;:9,\&quot;TotalVariantChecked\&quot;:9},{\&quot;ProductGuid\&quot;:\&quot;Product/12\&quot;,\&quot;Name\&quot;:\&quot;BEEF STEAK\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Sandwich\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Bagutte\&quot;,\&quot;OrderNo\&quot;:1}],\&quot;TotalVariant\&quot;:2,\&quot;TotalVariantChecked\&quot;:2},{\&quot;ProductGuid\&quot;:\&quot;Product/11\&quot;,\&quot;Name\&quot;:\&quot;Parma Ham\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Sandwich\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Bagutte\&quot;,\&quot;OrderNo\&quot;:1}],\&quot;TotalVariant\&quot;:2,\&quot;TotalVariantChecked\&quot;:2},{\&quot;ProductGuid\&quot;:\&quot;Product/10\&quot;,\&quot;Name\&quot;:\&quot;Ortolano\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;S•Red\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;S•Blue\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;S•Green\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;M•Red\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;M•Blue\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;M•Green\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;L•Red\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;L•Blue\&quot;,\&quot;OrderNo\&quot;:7},{\&quot;GroupName\&quot;:\&quot;L•Green\&quot;,\&quot;OrderNo\&quot;:8},{\&quot;GroupName\&quot;:\&quot;XL•Red\&quot;,\&quot;OrderNo\&quot;:9},{\&quot;GroupName\&quot;:\&quot;XL•Blue\&quot;,\&quot;OrderNo\&quot;:10},{\&quot;GroupName\&quot;:\&quot;XL•Green\&quot;,\&quot;OrderNo\&quot;:11}],\&quot;TotalVariant\&quot;:12,\&quot;TotalVariantChecked\&quot;:12}]&quot;
+                    }
+                  ]
+                }
+              ],
+              &quot;ListDiscountsApplyToItem&quot;: [
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/7&quot;,
+                  &quot;DiscountType&quot;: 1,
+                  &quot;ApplyTo&quot;: 4,
+                  &quot;ListParents&quot;: &quot;[{\&quot;CategoryGuid\&quot;:\&quot;Category/1329628\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329667\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329659\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329663\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329657\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329631\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329633\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329635\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329641\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329643\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329645\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329647\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329649\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329651\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329653\&quot;},{\&quot;CategoryGuid\&quot;:\&quot;Category/1329655\&quot;}]&quot;,
+                  &quot;ListProducts&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/28\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/46\&quot;,\&quot;ListVariant\&quot;:[]}]&quot;,
+                  &quot;UserGuid&quot;: &quot;Customer/20&quot;
+                },
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/9&quot;,
+                  &quot;DiscountType&quot;: 2,
+                  &quot;ApplyTo&quot;: 3,
+                  &quot;ListParents&quot;: &quot;[{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/59\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/55\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/54\&quot;},{\&quot;GroupGuid\&quot;:\&quot;AccountGroup/51\&quot;}]&quot;,
+                  &quot;ListProducts&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/12\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/28\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/11\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/16\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/13\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/26\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/26\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/27\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/46\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/46\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/48\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/48\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/49\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/49\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/11\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/16\&quot;,\&quot;ListVariant\&quot;:[]}]&quot;,
+                  &quot;UserGuid&quot;: &quot;Customer/20&quot;
+                },
+                {
+                  &quot;DiscountGuid&quot;: &quot;CustomerDiscounts/5&quot;,
+                  &quot;DiscountType&quot;: 1,
+                  &quot;ApplyTo&quot;: 2,
+                  &quot;ListParents&quot;: &quot;&quot;,
+                  &quot;ListProducts&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/27\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/22\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/21\&quot;,\&quot;ListVariant\&quot;:[]},{\&quot;ProductGuid\&quot;:\&quot;Product/20\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;S•White\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;S•Black\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;M•White\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;M•Black\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;L•White\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;L•Black\&quot;,\&quot;OrderNo\&quot;:5}]},{\&quot;ProductGuid\&quot;:\&quot;Product/19\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;S•White\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;S•Black\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;S•Blue\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;M•White\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;M•Black\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;M•Blue\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;L•White\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;L•Black\&quot;,\&quot;OrderNo\&quot;:7},{\&quot;GroupName\&quot;:\&quot;L•Blue\&quot;,\&quot;OrderNo\&quot;:8}]},{\&quot;ProductGuid\&quot;:\&quot;Product/12\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Sandwich\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Bagutte\&quot;,\&quot;OrderNo\&quot;:1}]},{\&quot;ProductGuid\&quot;:\&quot;Product/11\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;Sandwich\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;Bagutte\&quot;,\&quot;OrderNo\&quot;:1}]},{\&quot;ProductGuid\&quot;:\&quot;Product/10\&quot;,\&quot;ListVariant\&quot;:[{\&quot;GroupName\&quot;:\&quot;S•Red\&quot;,\&quot;OrderNo\&quot;:0},{\&quot;GroupName\&quot;:\&quot;S•Blue\&quot;,\&quot;OrderNo\&quot;:1},{\&quot;GroupName\&quot;:\&quot;S•Green\&quot;,\&quot;OrderNo\&quot;:2},{\&quot;GroupName\&quot;:\&quot;M•Red\&quot;,\&quot;OrderNo\&quot;:3},{\&quot;GroupName\&quot;:\&quot;M•Blue\&quot;,\&quot;OrderNo\&quot;:4},{\&quot;GroupName\&quot;:\&quot;M•Green\&quot;,\&quot;OrderNo\&quot;:5},{\&quot;GroupName\&quot;:\&quot;L•Red\&quot;,\&quot;OrderNo\&quot;:6},{\&quot;GroupName\&quot;:\&quot;L•Blue\&quot;,\&quot;OrderNo\&quot;:7},{\&quot;GroupName\&quot;:\&quot;L•Green\&quot;,\&quot;OrderNo\&quot;:8},{\&quot;GroupName\&quot;:\&quot;XL•Red\&quot;,\&quot;OrderNo\&quot;:9},{\&quot;GroupName\&quot;:\&quot;XL•Blue\&quot;,\&quot;OrderNo\&quot;:10},{\&quot;GroupName\&quot;:\&quot;XL•Green\&quot;,\&quot;OrderNo\&quot;:11}]}]&quot;,
+                  &quot;UserGuid&quot;: &quot;Customer/20&quot;
+                }
+              ],
+              &quot;ListDiscountsImages&quot;: [
+                
+              ],
+              &quot;ListSystemDiscountType&quot;: [
+                {
+                  &quot;DiscountType&quot;: 1,
+                  &quot;Title_vi&quot;: &quot;Phần Trăm&quot;,
+                  &quot;Title_en&quot;: &quot;Percentage&quot;,
+                  &quot;OrderNo&quot;: 0
+                },
+                {
+                  &quot;DiscountType&quot;: 2,
+                  &quot;Title_vi&quot;: &quot;Số tiền&quot;,
+                  &quot;Title_en&quot;: &quot;Fixed amount&quot;,
+                  &quot;OrderNo&quot;: 1
+                },
+                {
+                  &quot;DiscountType&quot;: 3,
+                  &quot;Title_vi&quot;: &quot;Miễn Phí vận chuyển&quot;,
+                  &quot;Title_en&quot;: &quot;Free shipping&quot;,
+                  &quot;OrderNo&quot;: 2
+                },
+                {
+                  &quot;DiscountType&quot;: 4,
+                  &quot;Title_vi&quot;: &quot;Mua X tặng Y&quot;,
+                  &quot;Title_en&quot;: &quot;Buy X get Y&quot;,
+                  &quot;OrderNo&quot;: 3
+                }
+              ],
+              &quot;ListApplyTo&quot;: [
+                {
+                  &quot;Id&quot;: 1,
+                  &quot;Title&quot;: &quot;Entire Order&quot;
+                },
+                {
+                  &quot;Id&quot;: 2,
+                  &quot;Title&quot;: &quot;Specific products&quot;
+                },
+                {
+                  &quot;Id&quot;: 3,
+                  &quot;Title&quot;: &quot;Specific collections&quot;
+                },
+                {
+                  &quot;Id&quot;: 4,
+                  &quot;Title&quot;: &quot;Specific categories&quot;
+                }
+              ]
+            }
+          ]
+        },
+        {
+          &quot;Id&quot;: 3,
+          &quot;Title&quot;: &quot;Service or Addon&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 1,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            {
+              &quot;ListServices&quot;: [
+                {
+                  &quot;ServiceGuid&quot;: &quot;CustomerService/2&quot;,
+                  &quot;_key&quot;: 2,
+                  &quot;ServiceId&quot;: 1,
+                  &quot;Name&quot;: &quot;Service 5 not Include&quot;,
+                  &quot;ServiceValue&quot;: 5.0,
+                  &quot;ServiceIncludingMethodName&quot;: &quot;Add Service to Item Price&quot;
+                },
+                {
+                  &quot;ServiceGuid&quot;: &quot;CustomerService/1&quot;,
+                  &quot;_key&quot;: 1,
+                  &quot;ServiceId&quot;: 2,
+                  &quot;Name&quot;: &quot;Phi 5&quot;,
+                  &quot;ServiceValue&quot;: 5.0,
+                  &quot;ServiceIncludingMethodName&quot;: &quot;Include Service in Item Price&quot;
+                }
+              ],
+              &quot;AppplyTo&quot;: [
+                {
+                  &quot;_Id&quot;: &quot;CustomerServiceProduct/1&quot;,
+                  &quot;_rev&quot;: &quot;_awyVk-C--_&quot;,
+                  &quot;_key&quot;: 1,
+                  &quot;ServiceGuid&quot;: &quot;CustomerService/1&quot;,
+                  &quot;AvailableAtFuture&quot;: 1,
+                  &quot;ListProduct&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/46\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/28\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/20\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/16\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/15\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/14\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/13\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/12\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/11\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/10\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/9\&quot;,\&quot;Visible\&quot;:1}]&quot;
+                },
+                {
+                  &quot;_Id&quot;: &quot;CustomerServiceProduct/2&quot;,
+                  &quot;_rev&quot;: &quot;_awyVP2G--_&quot;,
+                  &quot;_key&quot;: 2,
+                  &quot;ServiceGuid&quot;: &quot;CustomerService/2&quot;,
+                  &quot;AvailableAtFuture&quot;: 1,
+                  &quot;ListProduct&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/24\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/23\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/15\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/14\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/13\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/12\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/11\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/10\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/9\&quot;,\&quot;Visible\&quot;:1}]&quot;
+                }
+              ]
+            }
+          ]
+        },
+        {
+          &quot;Id&quot;: 4,
+          &quot;Title&quot;: &quot;Surcharge&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 1,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            {
+              &quot;ListSurcharges&quot;: [
+                {
+                  &quot;SurchargeGuid&quot;: &quot;CustomerSurcharge/1&quot;,
+                  &quot;_key&quot;: 1,
+                  &quot;SurchargeId&quot;: 1,
+                  &quot;Name&quot;: &quot;Surcharge 5 Include&quot;,
+                  &quot;SurchargeValue&quot;: 5.0,
+                  &quot;SurchargeIncludingMethodName&quot;: &quot;Add Surcharge to Item Price&quot;
+                }
+              ],
+              &quot;ApplyTo&quot;: [
+                {
+                  &quot;_Id&quot;: &quot;CustomerSurchargeProduct/1&quot;,
+                  &quot;_rev&quot;: &quot;_awyVuU2--_&quot;,
+                  &quot;_key&quot;: 1,
+                  &quot;SurchargeGuid&quot;: &quot;CustomerSurcharge/1&quot;,
+                  &quot;AvailableAtFuture&quot;: 1,
+                  &quot;ListProduct&quot;: &quot;[{\&quot;ProductGuid\&quot;:\&quot;Product/13\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/12\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/11\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/10\&quot;,\&quot;Visible\&quot;:1},{\&quot;ProductGuid\&quot;:\&quot;Product/9\&quot;,\&quot;Visible\&quot;:1}]&quot;
+                }
+              ]
+            }
+          ]
+        },
+        {
+          &quot;Id&quot;: 5,
+          &quot;Title&quot;: &quot;Tax&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 1,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            {
+              &quot;ListTaxes&quot;: [
+                {
+                  &quot;TaxGuid&quot;: &quot;CustomerTax/5622840&quot;,
+                  &quot;_key&quot;: 5622840,
+                  &quot;TaxId&quot;: 1,
+                  &quot;Name&quot;: &quot;Tax 5&quot;,
+                  &quot;TaxValue&quot;: 5.0,
+                  &quot;TaxIncludingMethodName&quot;: &quot;Add Tax to Item Price&quot;
+                }
+              ],
+              &quot;AppplyTo&quot;: [
+                
+              ]
+            }
+          ]
+        },
+        {
+          &quot;Id&quot;: 6,
+          &quot;Title&quot;: &quot;NA&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 0,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            
+          ]
+        }
+      ]
+    },
+    {
+      &quot;GroupId&quot;: 2,
+      &quot;GroupTitle&quot;: &quot;Total&quot;,
+      &quot;ListSettings&quot;: [
+        {
+          &quot;Id&quot;: 7,
+          &quot;Title&quot;: &quot;Total Shipping&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 0,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            
+          ]
+        },
+        {
+          &quot;Id&quot;: 8,
+          &quot;Title&quot;: &quot;Discount&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 0,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            
+          ]
+        },
+        {
+          &quot;Id&quot;: 9,
+          &quot;Title&quot;: &quot;Service or Addon&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 0,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            
+          ]
+        },
+        {
+          &quot;Id&quot;: 10,
+          &quot;Title&quot;: &quot;Surcharge&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 0,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            
+          ]
+        },
+        {
+          &quot;Id&quot;: 11,
+          &quot;Title&quot;: &quot;Tax&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 0,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            
+          ]
+        },
+        {
+          &quot;Id&quot;: 12,
+          &quot;Title&quot;: &quot;NA&quot;,
+          &quot;Plus&quot;: 1,
+          &quot;PlusText&quot;: &quot;+&quot;,
+          &quot;Type&quot;: 1,
+          &quot;Visible&quot;: 0,
+          &quot;Value&quot;: 0,
+          &quot;Lists&quot;: [
+            
+          ]
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:20208",
+      "sslPort": 44329
+    }
+  },
+  "profiles": {
+    "Websites": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "StressTest"
+      },
+      "applicationUrl": "https://localhost:7089;http://localhost:5089",
+      "dotnetRunMessages": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "StressTest"
+      },
+      "ancmHostingModel": "OutOfProcess"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "StressTest",
+        "ARANGO_SERVER": "StressTest"
+      },
+      "publishAllPorts": true,
+      "useSSL": false
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:7089",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "StressTest",
+        "ASPNETCORE_URLS": "https://localhost:7089;http://localhost:5089"
+      },
+      "distributionName": ""
+    }
+  }
+}

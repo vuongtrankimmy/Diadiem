@@ -1,0 +1,461 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Địa Điểm API v1.4</title>
+</head>
+<body>
+
+    <h1 id="ia-iem-api-v1.4">Địa Điểm API v1.4</h1>
+<h3 id="cap-nhat">Cập nhật</h3>
+<h2 id="pos-ui-20032020"><code>POS UI *[20/03/2020]*</code></h2>
+<ul>
+<li><strong>Update: Setting Css</strong>
+<ol>
+<li>Cập nhập api/pos/ui <strong>font-size</strong>  <code>Setting_Css</code>.</li>
+<li>Thêm mới Field <strong>Employee</strong> Trong <code>Device</code>.</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><em><strong>Note</strong></em>:</p>
+<ul>
+<li>[ x ]: Vị trí thay đổi trên dữ liệu</li>
+</ul>
+</blockquote>
+<hr />
+<ol>
+<li><code>Setting_Css</code>
+<br></li>
+</ol>
+<pre><code class="language-json">
+{
+  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      [x][x][x]&quot;Settings_Css&quot;: [
+        {
+          &quot;Font_Family&quot;: &quot;Roboto&quot;,
+          &quot;A&quot;: [
+            {
+              &quot;Resolution&quot;: &quot;9.7, 10.2, 10.5 , 11.0&quot;,
+              &quot;H1&quot;: 120,
+              &quot;H2&quot;: 60,
+              &quot;H3&quot;: 40,
+              &quot;H4&quot;: 35,
+              &quot;H5&quot;: 30,
+              &quot;H6&quot;: 25,
+              &quot;H7&quot;: 0,
+              &quot;P&quot;: 20
+            }
+          ],
+          &quot;B&quot;: [
+            {
+              &quot;Resolution&quot;: &quot;7.9&quot;,
+              &quot;H1&quot;: 100,
+              &quot;H2&quot;: 50,
+              &quot;H3&quot;: 34,
+              &quot;H4&quot;: 30,
+              &quot;H5&quot;: 25,
+              &quot;H6&quot;: 21,
+              &quot;H7&quot;: 0,
+              &quot;P&quot;: 17
+            }
+          ],
+          &quot;C&quot;: [
+            {
+              &quot;Resolution&quot;: &quot;12.9&quot;,
+              &quot;H1&quot;: 144,
+              &quot;H2&quot;: 72,
+              &quot;H3&quot;: 48,
+              &quot;H4&quot;: 42,
+              &quot;H5&quot;: 36,
+              &quot;H6&quot;: 30,
+              &quot;H7&quot;: 0,
+              &quot;P&quot;: 24
+            }
+          ]
+        }
+      ],[x][x][x]
+      &quot;Welcome&quot;: [
+        {
+          &quot;Pages_Welcome&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Logo&quot;: &quot;http://pos_images.diadiem.com/pos/logo/logo.png&quot;,
+              &quot;Background&quot;: &quot;http://pos_images.diadiem.com/pos/welcome/ipad/2388/Background.jpg?v=1.0&quot;,
+              &quot;Visible&quot;: 0
+            }
+          ],
+          &quot;Pages_Welcome_Text&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Title&quot;: &quot;Diadiem Point of Sale&quot;,
+              &quot;Description&quot;: &quot;Run and grow your business&quot;,
+              &quot;Button&quot;: &quot;Get Started&quot;
+            }
+          ]
+        }
+      ],
+      &quot;Device_Code&quot;: [
+        {
+          &quot;Pages_Device_Code&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Background&quot;: [
+                {
+                  &quot;Color1&quot;: &quot;#ffffff&quot;
+                }
+              ],
+              &quot;Visible&quot;: 0
+            }
+          ],
+          &quot;Pages_Device_Code_Text&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Title&quot;: &quot;Sign In With Device Code&quot;,
+              &quot;Description&quot;: &quot;Devices Codes are created in Dashboard for each new device, allowing you to sign in without ever sharing your email and password.&quot;,
+              &quot;Button&quot;: &quot;Sign In&quot;
+            }
+          ]
+        }
+      ],
+      &quot;Pass_Code&quot;: [
+        {
+          &quot;Pages_Pass_Code&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Background&quot;: [
+                {
+                  &quot;Color1&quot;: &quot;#546376&quot;,
+                  &quot;Color2&quot;: &quot;#000000&quot;
+                }
+              ],
+              &quot;Visible&quot;: 1
+            }
+          ],
+          &quot;Pages_Pass_Code_Text&quot;: [
+            {
+              &quot;PagesId&quot;: 1,
+              &quot;Button&quot;: &quot;Clock In/Out&quot;
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  &quot;PageSize&quot;: 0,
+  &quot;PageNumber&quot;: 0,
+  &quot;ItemsCount&quot;: 0,
+  &quot;PageCount&quot;: -2147483648.0
+}
+</code></pre>
+<p><br><br></p>
+<ol start="2">
+<li><code>Setting_Css</code>
+<br></li>
+</ol>
+<pre><code class="language-json">
+{
+  &quot;Message&quot;: null,
+  &quot;DidError&quot;: false,
+  &quot;ErrorMessage&quot;: null,
+  &quot;Model&quot;: [
+    {
+      &quot;Device&quot;: [
+        {
+          &quot;_Id&quot;: &quot;Device/438231102&quot;,
+          &quot;_rev&quot;: &quot;_aDGa-G6--_&quot;,
+          &quot;_key&quot;: 438231102,
+          &quot;Nickname&quot;: &quot;Cashier&quot;,
+          &quot;Location&quot;: &quot;Location/425242107&quot;,
+          &quot;DeviceType&quot;: 1,
+          &quot;RequestNotification&quot;: null,
+          &quot;EnableNotification&quot;: null,
+          &quot;EnableLocation&quot;: null,
+          &quot;AppCode&quot;: &quot;KWE2-G6HX-NXF9&quot;,
+          &quot;HexCode&quot;: &quot;666eda6b39004ef7bbda01bedabe43f2_20200211160001&quot;,
+          &quot;CreateDate&quot;: &quot;2020-02-11T16:00:01&quot;,
+          &quot;InDate&quot;: &quot;2020-02-17T07:45:31&quot;,
+          &quot;OutDate&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;Status&quot;: 2,
+          &quot;UserGuid&quot;: &quot;Customer/438227760&quot;,
+          &quot;Visible&quot;: 1,
+          &quot;DeviceId&quot;: 21
+        }
+      ],
+      &quot;Region&quot;: [
+        {
+          &quot;DisplayName&quot;: &quot;Cherokee (Cherokee)&quot;,
+          &quot;EnglishName&quot;: &quot;Cherokee (Cherokee, United States)&quot;,
+          &quot;FullDateTimePattern&quot;: &quot;dddd, MMMM dd,yyyy h:mm:ss tt&quot;,
+          &quot;LongDatePattern&quot;: &quot;dddd, MMMM dd,yyyy&quot;,
+          &quot;LongTimePattern&quot;: &quot;h:mm:ss tt&quot;,
+          &quot;ShortDatePattern&quot;: &quot;M/d/yyyy&quot;,
+          &quot;ShortTimePattern&quot;: &quot;h:mm tt&quot;,
+          &quot;DayNames&quot;: [
+            &quot;ᎤᎾᏙᏓᏆᏍᎬ&quot;,
+            &quot;ᎤᎾᏙᏓᏉᏅᎯ&quot;,
+            &quot;ᏔᎵᏁᎢᎦ&quot;,
+            &quot;ᏦᎢᏁᎢᎦ&quot;,
+            &quot;ᏅᎩᏁᎢᎦ&quot;,
+            &quot;ᏧᎾᎩᎶᏍᏗ&quot;,
+            &quot;ᎤᎾᏙᏓᏈᏕᎾ&quot;
+          ],
+          &quot;MonthNames&quot;: [
+            &quot;ᎤᏃᎸᏔᏅ&quot;,
+            &quot;ᎧᎦᎵ&quot;,
+            &quot;ᎠᏅᏱ&quot;,
+            &quot;ᏝᏬᏂ&quot;,
+            &quot;ᎠᏂᏍᎬᏘ&quot;,
+            &quot;ᏕᎭᎷᏱ&quot;,
+            &quot;ᎫᏰᏉᏂ&quot;,
+            &quot;ᎦᎶᏂ&quot;,
+            &quot;ᏚᎵᏍᏗ&quot;,
+            &quot;ᏚᏂᏅᏗ&quot;,
+            &quot;ᏅᏓᏕᏆ&quot;,
+            &quot;ᎤᏍᎩᏱ&quot;,
+            &quot;&quot;
+          ],
+          &quot;CurrencySymbol&quot;: &quot;$&quot;,
+          &quot;CurrencyDecimalDigits&quot;: 2,
+          &quot;CurrencyDecimalSeparator&quot;: &quot;.&quot;,
+          &quot;CurrencyGroupSeparator&quot;: &quot;,&quot;,
+          &quot;NumberDecimalDigits&quot;: 2,
+          &quot;NumberNegativePattern&quot;: &quot;1&quot;,
+          &quot;PerMilleSymbol&quot;: &quot;‰&quot;,
+          &quot;PercentDecimalDigits&quot;: 2,
+          &quot;PercentDecimalSeparator&quot;: &quot;.&quot;,
+          &quot;TextInfo&quot;: &quot;chr-Cher-US&quot;,
+          &quot;ThreeLetterISOLanguageName&quot;: &quot;chr&quot;,
+          &quot;ThreeLetterWindowsLanguageName&quot;: &quot;CRE&quot;,
+          &quot;TwoLetterISOLanguageName&quot;: &quot;chr&quot;,
+          &quot;RegionTwoLetterISORegionName&quot;: &quot;US&quot;,
+          &quot;RegionThreeLetterWindowsRegionName&quot;: &quot;USA&quot;,
+          &quot;RegionGeoId&quot;: 244,
+          &quot;RegionName&quot;: &quot;US&quot;,
+          &quot;RegionDisplayName&quot;: &quot;United States&quot;,
+          &quot;RegionNativeName&quot;: &quot;ᏌᏊ ᎢᏳᎾᎵᏍᏔᏅ ᏍᎦᏚᎩ&quot;,
+          &quot;NumericCode&quot;: 840,
+          &quot;DialCodes&quot;: [
+            &quot;1&quot;
+          ]
+        },
+        {
+          &quot;DisplayName&quot;: &quot;English (United States)&quot;,
+          &quot;EnglishName&quot;: &quot;English (United States)&quot;,
+          &quot;FullDateTimePattern&quot;: &quot;dddd, MMMM d, yyyy h:mm:ss tt&quot;,
+          &quot;LongDatePattern&quot;: &quot;dddd, MMMM d, yyyy&quot;,
+          &quot;LongTimePattern&quot;: &quot;h:mm:ss tt&quot;,
+          &quot;ShortDatePattern&quot;: &quot;M/d/yyyy&quot;,
+          &quot;ShortTimePattern&quot;: &quot;h:mm tt&quot;,
+          &quot;DayNames&quot;: [
+            &quot;Sunday&quot;,
+            &quot;Monday&quot;,
+            &quot;Tuesday&quot;,
+            &quot;Wednesday&quot;,
+            &quot;Thursday&quot;,
+            &quot;Friday&quot;,
+            &quot;Saturday&quot;
+          ],
+          &quot;MonthNames&quot;: [
+            &quot;January&quot;,
+            &quot;February&quot;,
+            &quot;March&quot;,
+            &quot;April&quot;,
+            &quot;May&quot;,
+            &quot;June&quot;,
+            &quot;July&quot;,
+            &quot;August&quot;,
+            &quot;September&quot;,
+            &quot;October&quot;,
+            &quot;November&quot;,
+            &quot;December&quot;,
+            &quot;&quot;
+          ],
+          &quot;CurrencySymbol&quot;: &quot;$&quot;,
+          &quot;CurrencyDecimalDigits&quot;: 2,
+          &quot;CurrencyDecimalSeparator&quot;: &quot;.&quot;,
+          &quot;CurrencyGroupSeparator&quot;: &quot;,&quot;,
+          &quot;NumberDecimalDigits&quot;: 2,
+          &quot;NumberNegativePattern&quot;: &quot;1&quot;,
+          &quot;PerMilleSymbol&quot;: &quot;‰&quot;,
+          &quot;PercentDecimalDigits&quot;: 2,
+          &quot;PercentDecimalSeparator&quot;: &quot;.&quot;,
+          &quot;TextInfo&quot;: &quot;en-US&quot;,
+          &quot;ThreeLetterISOLanguageName&quot;: &quot;eng&quot;,
+          &quot;ThreeLetterWindowsLanguageName&quot;: &quot;ENU&quot;,
+          &quot;TwoLetterISOLanguageName&quot;: &quot;en&quot;,
+          &quot;RegionTwoLetterISORegionName&quot;: &quot;US&quot;,
+          &quot;RegionThreeLetterWindowsRegionName&quot;: &quot;USA&quot;,
+          &quot;RegionGeoId&quot;: 244,
+          &quot;RegionName&quot;: &quot;US&quot;,
+          &quot;RegionDisplayName&quot;: &quot;United States&quot;,
+          &quot;RegionNativeName&quot;: &quot;United States&quot;,
+          &quot;NumericCode&quot;: 840,
+          &quot;DialCodes&quot;: [
+            &quot;1&quot;
+          ]
+        },
+        {
+          &quot;DisplayName&quot;: &quot;Hawaiian (United States)&quot;,
+          &quot;EnglishName&quot;: &quot;Hawaiian (United States)&quot;,
+          &quot;FullDateTimePattern&quot;: &quot;dddd, d MMMM yyyy h:mm:ss tt&quot;,
+          &quot;LongDatePattern&quot;: &quot;dddd, d MMMM yyyy&quot;,
+          &quot;LongTimePattern&quot;: &quot;h:mm:ss tt&quot;,
+          &quot;ShortDatePattern&quot;: &quot;d/M/yyyy&quot;,
+          &quot;ShortTimePattern&quot;: &quot;h:mm tt&quot;,
+          &quot;DayNames&quot;: [
+            &quot;Lāpule&quot;,
+            &quot;Poʻakahi&quot;,
+            &quot;Poʻalua&quot;,
+            &quot;Poʻakolu&quot;,
+            &quot;Poʻahā&quot;,
+            &quot;Poʻalima&quot;,
+            &quot;Poʻaono&quot;
+          ],
+          &quot;MonthNames&quot;: [
+            &quot;Ianuali&quot;,
+            &quot;Pepeluali&quot;,
+            &quot;Malaki&quot;,
+            &quot;ʻApelila&quot;,
+            &quot;Mei&quot;,
+            &quot;Iune&quot;,
+            &quot;Iulai&quot;,
+            &quot;ʻAukake&quot;,
+            &quot;Kepakemapa&quot;,
+            &quot;ʻOkakopa&quot;,
+            &quot;Nowemapa&quot;,
+            &quot;Kekemapa&quot;,
+            &quot;&quot;
+          ],
+          &quot;CurrencySymbol&quot;: &quot;$&quot;,
+          &quot;CurrencyDecimalDigits&quot;: 2,
+          &quot;CurrencyDecimalSeparator&quot;: &quot;.&quot;,
+          &quot;CurrencyGroupSeparator&quot;: &quot;,&quot;,
+          &quot;NumberDecimalDigits&quot;: 2,
+          &quot;NumberNegativePattern&quot;: &quot;1&quot;,
+          &quot;PerMilleSymbol&quot;: &quot;‰&quot;,
+          &quot;PercentDecimalDigits&quot;: 2,
+          &quot;PercentDecimalSeparator&quot;: &quot;.&quot;,
+          &quot;TextInfo&quot;: &quot;haw-US&quot;,
+          &quot;ThreeLetterISOLanguageName&quot;: &quot;haw&quot;,
+          &quot;ThreeLetterWindowsLanguageName&quot;: &quot;HAW&quot;,
+          &quot;TwoLetterISOLanguageName&quot;: &quot;haw&quot;,
+          &quot;RegionTwoLetterISORegionName&quot;: &quot;US&quot;,
+          &quot;RegionThreeLetterWindowsRegionName&quot;: &quot;USA&quot;,
+          &quot;RegionGeoId&quot;: 244,
+          &quot;RegionName&quot;: &quot;US&quot;,
+          &quot;RegionDisplayName&quot;: &quot;United States&quot;,
+          &quot;RegionNativeName&quot;: &quot;ʻAmelika Hui Pū ʻIa&quot;,
+          &quot;NumericCode&quot;: 840,
+          &quot;DialCodes&quot;: [
+            &quot;1&quot;
+          ]
+        },
+        {
+          &quot;DisplayName&quot;: &quot;Spanish (United States)&quot;,
+          &quot;EnglishName&quot;: &quot;Spanish (United States)&quot;,
+          &quot;FullDateTimePattern&quot;: &quot;dddd, MMMM dd, yyyy h:mm:ss tt&quot;,
+          &quot;LongDatePattern&quot;: &quot;dddd, MMMM dd, yyyy&quot;,
+          &quot;LongTimePattern&quot;: &quot;h:mm:ss tt&quot;,
+          &quot;ShortDatePattern&quot;: &quot;M/d/yyyy&quot;,
+          &quot;ShortTimePattern&quot;: &quot;h:mm tt&quot;,
+          &quot;DayNames&quot;: [
+            &quot;domingo&quot;,
+            &quot;lunes&quot;,
+            &quot;martes&quot;,
+            &quot;miércoles&quot;,
+            &quot;jueves&quot;,
+            &quot;viernes&quot;,
+            &quot;sábado&quot;
+          ],
+          &quot;MonthNames&quot;: [
+            &quot;enero&quot;,
+            &quot;febrero&quot;,
+            &quot;marzo&quot;,
+            &quot;abril&quot;,
+            &quot;mayo&quot;,
+            &quot;junio&quot;,
+            &quot;julio&quot;,
+            &quot;agosto&quot;,
+            &quot;septiembre&quot;,
+            &quot;octubre&quot;,
+            &quot;noviembre&quot;,
+            &quot;diciembre&quot;,
+            &quot;&quot;
+          ],
+          &quot;CurrencySymbol&quot;: &quot;$&quot;,
+          &quot;CurrencyDecimalDigits&quot;: 2,
+          &quot;CurrencyDecimalSeparator&quot;: &quot;.&quot;,
+          &quot;CurrencyGroupSeparator&quot;: &quot;,&quot;,
+          &quot;NumberDecimalDigits&quot;: 2,
+          &quot;NumberNegativePattern&quot;: &quot;1&quot;,
+          &quot;PerMilleSymbol&quot;: &quot;‰&quot;,
+          &quot;PercentDecimalDigits&quot;: 2,
+          &quot;PercentDecimalSeparator&quot;: &quot;.&quot;,
+          &quot;TextInfo&quot;: &quot;es-US&quot;,
+          &quot;ThreeLetterISOLanguageName&quot;: &quot;spa&quot;,
+          &quot;ThreeLetterWindowsLanguageName&quot;: &quot;EST&quot;,
+          &quot;TwoLetterISOLanguageName&quot;: &quot;es&quot;,
+          &quot;RegionTwoLetterISORegionName&quot;: &quot;US&quot;,
+          &quot;RegionThreeLetterWindowsRegionName&quot;: &quot;USA&quot;,
+          &quot;RegionGeoId&quot;: 244,
+          &quot;RegionName&quot;: &quot;US&quot;,
+          &quot;RegionDisplayName&quot;: &quot;United States&quot;,
+          &quot;RegionNativeName&quot;: &quot;Estados Unidos&quot;,
+          &quot;NumericCode&quot;: 840,
+          &quot;DialCodes&quot;: [
+            &quot;1&quot;
+          ]
+        }
+      ],
+      &quot;SystemTimeZoneInfo&quot;: [
+        {
+          &quot;SystemTimeZone&quot;: &quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;,
+          &quot;Id&quot;: &quot;Mountain Standard Time&quot;,
+          &quot;DaylightName&quot;: &quot;Mountain Daylight Time&quot;,
+          &quot;DisplayName&quot;: &quot;(UTC-07:00) Mountain Time (US &amp; Canada)&quot;,
+          &quot;BaseUtcOffset&quot;: &quot;-07:00:00&quot;,
+          &quot;StandardName&quot;: &quot;Mountain Standard Time&quot;,
+          &quot;SupportsDaylightSavingTime&quot;: true,
+          &quot;TimeZoneInfoDetail&quot;: &quot;Friday, March 20, 2020 3:56 AM&quot;,
+          &quot;TimeZoneInfoDate&quot;: &quot;Friday, March 20, 2020&quot;,
+          &quot;TimeZoneInfoTime&quot;: &quot;3:56 AM&quot;,
+          &quot;TimeZoneInfoMyDayFormat&quot;: &quot;Thursday, March 19,&quot;,
+          &quot;TimeZoneInfoMyTimeFormat&quot;: &quot;03:56&quot;,
+          &quot;TimeZoneInfoNow&quot;: &quot;2020-03-20T03:56:59&quot;
+        }
+      ],
+      &quot;DeviceInfoGuid&quot;: &quot;DeviceInfo/275&quot;,
+      [x][x][x]&quot;Employees&quot;: [
+        {
+          &quot;_Id&quot;: &quot;Employee/2624283&quot;,
+          &quot;_rev&quot;: &quot;_aBL6H2q--_&quot;,
+          &quot;_key&quot;: 2624283,
+          &quot;FirstName&quot;: &quot;Hằng&quot;,
+          &quot;LastName&quot;: &quot;Trần&quot;,
+          &quot;DateOfBirth&quot;: &quot;0001-01-01T00:00:00&quot;,
+          &quot;PassCode&quot;: &quot;xxxx&quot;,
+          &quot;Email&quot;: &quot;&quot;,
+          &quot;Phone&quot;: &quot;&quot;,
+          &quot;Department&quot;: 0,
+          &quot;Position&quot;: 0,
+          &quot;Country&quot;: 0,
+          &quot;City&quot;: 0,
+          &quot;Ward&quot;: 0
+        }
+      ][x][x][x]
+    }
+  ],
+  &quot;PageSize&quot;: 0,
+  &quot;PageNumber&quot;: 0,
+  &quot;ItemsCount&quot;: 0,
+  &quot;PageCount&quot;: -2147483648.0
+}
+</code></pre>
+
+
+</body>
+</html>

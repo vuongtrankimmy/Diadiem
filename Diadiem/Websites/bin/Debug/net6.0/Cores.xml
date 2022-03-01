@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cores</name>
+    </assembly>
+    <members>
+        <member name="M:Cores.Encrypto.Encrypto.EncryptByAES(System.String)">
+            <summary>  
+            AES encryption algorithm  
+            </summary>  
+            <param name="input">plain string</param>  
+            <returns>string</returns>  
+        </member>
+        <member name="M:Cores.Encrypto.Encrypto.DecryptByAES(System.String)">
+            <summary>  
+            AES decryption  
+            </summary>  
+            <param name="input"> ciphertext byte array</param>  
+            <returns> returns the decrypted string</returns>  
+        </member>
+        <member name="M:Cores.Encrypto.Encrypto.HexStringToByteArray(System.String)">
+            <summary>
+            Convert the specified hex string to a byte array
+            </summary>
+            <param name="s">hexadecimal string (eg "7F 2C 4A" or "7F2C4A")</param>
+            <returns>byte array corresponding to hexadecimal string</returns>
+        </member>
+        <member name="M:Cores.Encrypto.Encrypto.ByteArrayToHexString(System.Byte[])">
+            <summary>
+            Convert a byte array into a formatted hex string
+            </summary>
+            <param name="data">byte array</param>
+            <returns> formatted hexadecimal string</returns>
+        </member>
+        <member name="T:Cores.Exception.CustomExceptionMiddleware.ExceptionMiddleware">
+            <summary>
+            Exception Middle
+            </summary>
+        </member>
+        <member name="M:Cores.Exception.CustomExceptionMiddleware.ExceptionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Contracts.ILoggerManager)">
+            <summary>
+            Exception construction
+            </summary>
+            <param name="next"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Cores.Exception.CustomExceptionMiddleware.ExceptionMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invoke Async
+            </summary>
+            <param name="httpContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cores.Extension.Services.ServicesExtension">
+            <summary>
+            Service Extension
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Cores.Extension.Services.ServicesExtension.Hsts(Microsoft.Extensions.DependencyInjection.IServiceCollection)" -->
+        <member name="M:Cores.Extension.Services.ServicesExtension.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Cors
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Cores.Extension.Services.ServicesExtension.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure IIS Intergration
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Cores.Extension.Services.ServicesExtension.ConfigureLoggerService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Loggers Service
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Cores.Extension.Services.ServicesExtension.ConfigureCustomExceptionMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Configure Custom Exception Middleware
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:Cores.Extension.Services.ServicesExtension.ConfigureArangoDbContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Configure ArangoDB Context
+            </summary>
+            <param name="services"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:Cores.Extension.Services.ServicesExtension.AuthenticationJwtBearer(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+             <summary>
+             AuthenticationJwt Bearer
+             Security and Using JWT
+            JSON Web Tokens(JWT) are becoming more popular by the day in web development.It is very easy to implement JWT Authentication due to the.NET Core’s built-in support.JWT is an open standard and it allows us to transmit the data between a client and a server as a JSON object in a secure way.
+            </summary>
+             <param name="services"></param>
+             <param name="config"></param>
+        </member>
+        <member name="M:Cores.Extension.Services.ServicesExtension.AddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds the scoped.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:Cores.Extension.Services.ServicesExtension.AddAutoMapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds the scoped.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:Cores.Extension.Services.ServicesExtension.ConfigureTransientService(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Loggers Service
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:Cores.Extension.Swagger.SwaggerExtension">
+            <summary>
+            Swagger Extension
+            </summary>
+        </member>
+        <member name="M:Cores.Extension.Swagger.SwaggerExtension.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Add Swagger
+            </summary>
+            <param name="services"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:Cores.Extension.Swagger.SwaggerExtension.UseCustomSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Use Custom Swagger
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="T:Cores.FilterAttribute.ModelValidationAttribute">
+            <summary>
+            Model Validation Attribute
+            </summary>
+        </member>
+        <member name="M:Cores.FilterAttribute.ModelValidationAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Called when [action executing].
+            Using ActionFilters to Remove Duplicated Code Filters in ASP.NET Core allows us to run some code prior to or after the specific stage in a request pipeline.Therefore, we can use them to execute validation actions that we need to repeat in our action methods.When we handle a PUT or POST request in our action methods, we need to validate our model object as we did in the Actions part of this article.As a result, that would cause the repetition of our validation code, and we want to avoid that(Basically we want to ///avoid any code repetition as much as we can).
+            </summary>
+            <param name="context">The context.</param>
+            <inheritdoc />
+        </member>
+        <member name="T:Cores.ResponseTime.ResponseTimeMiddleware">
+            <summary>
+            tries to measure request processing time
+            </summary>
+        </member>
+        <member name="M:Cores.ResponseTime.ResponseTimeMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Cores.ResponseTime.ResponseTimeMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

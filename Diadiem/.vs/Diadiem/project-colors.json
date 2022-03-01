@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "25c9e829-a59e-40d4-bd95-7d4997598c00": {
+      "ProjectGuid": "25c9e829-a59e-40d4-bd95-7d4997598c00",
+      "DisplayName": "Diadiem",
+      "ColorIndex": 0
+    },
+    "5afebf38-c3e2-4b64-b9bc-09bf6e70da78": {
+      "ProjectGuid": "5afebf38-c3e2-4b64-b9bc-09bf6e70da78",
+      "DisplayName": "Websites",
+      "ColorIndex": 1
+    },
+    "8f5d1baf-693b-4e4c-b217-a97f56dfb982": {
+      "ProjectGuid": "8f5d1baf-693b-4e4c-b217-a97f56dfb982",
+      "DisplayName": "Cores",
+      "ColorIndex": 2
+    },
+    "d34cdb8c-02ca-43aa-a146-d3f5203cd204": {
+      "ProjectGuid": "d34cdb8c-02ca-43aa-a146-d3f5203cd204",
+      "DisplayName": "Contracts",
+      "ColorIndex": 3
+    },
+    "c259f6de-715f-48c6-81d1-dd5362a94c8e": {
+      "ProjectGuid": "c259f6de-715f-48c6-81d1-dd5362a94c8e",
+      "DisplayName": "BusinessLogicLayer",
+      "ColorIndex": 4
+    },
+    "3a9a6460-b074-40c2-b873-e7cda5f87c26": {
+      "ProjectGuid": "3a9a6460-b074-40c2-b873-e7cda5f87c26",
+      "DisplayName": "DataAccessLayer",
+      "ColorIndex": 5
+    },
+    "66504ec3-9157-4a99-ac62-773a32f91632": {
+      "ProjectGuid": "66504ec3-9157-4a99-ac62-773a32f91632",
+      "DisplayName": "Repository",
+      "ColorIndex": 6
+    },
+    "704e76a0-a09a-445c-abf8-ec97df25dc4a": {
+      "ProjectGuid": "704e76a0-a09a-445c-abf8-ec97df25dc4a",
+      "DisplayName": "Entities",
+      "ColorIndex": 7
+    },
+    "26449210-7f58-4f6b-80ef-66eb72427cc4": {
+      "ProjectGuid": "26449210-7f58-4f6b-80ef-66eb72427cc4",
+      "DisplayName": "Core.Arango",
+      "ColorIndex": 8
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "f32820b9-426a-422b-8931-84dc126c196e": {
+      "ProjectGuid": "f32820b9-426a-422b-8931-84dc126c196e",
+      "DisplayName": "LoggerService",
+      "ColorIndex": 9
+    },
+    "6068dba5-b495-4aba-a584-58bedc0833a6": {
+      "ProjectGuid": "6068dba5-b495-4aba-a584-58bedc0833a6",
+      "DisplayName": "App",
+      "ColorIndex": 10
+    },
+    "09e2431b-72e5-4981-ad15-49c3161ef87b": {
+      "ProjectGuid": "09e2431b-72e5-4981-ad15-49c3161ef87b",
+      "DisplayName": "Helpers",
+      "ColorIndex": 11
+    }
+  },
+  "NextColorIndex": 12
+}

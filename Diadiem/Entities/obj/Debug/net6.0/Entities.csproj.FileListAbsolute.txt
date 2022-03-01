@@ -1,0 +1,55 @@
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\bin\Debug\net6.0\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\bin\Debug\net6.0\ref\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\bin\Debug\net6.0\Entities.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\bin\Debug\net6.0\en-US\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\bin\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.ExtendedModels.Localize.Resource.en-US.resources
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.ExtendedModels.Localize.Resource.vi-VN.resources
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.csproj.GenerateResource.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\en-US\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\ref\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\bin\Debug\net6.0\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\bin\Debug\net6.0\ref\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\bin\Debug\net6.0\Entities.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\bin\Debug\net6.0\en-US\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\bin\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\Entities.ExtendedModels.Localize.Resource.en-US.resources
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\Entities.ExtendedModels.Localize.Resource.vi-VN.resources
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\Entities.csproj.GenerateResource.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\en-US\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\ref\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Entities\obj\Debug\net6.0\Entities.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\bin\Debug\net6.0\Entities.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\bin\Debug\net6.0\ref\Entities.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\bin\Debug\net6.0\Entities.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\bin\Debug\net6.0\en-US\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\bin\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\Entities.ExtendedModels.Localize.Resource.en-US.resources
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\Entities.ExtendedModels.Localize.Resource.vi-VN.resources
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\Entities.csproj.GenerateResource.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\en-US\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\Entities.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\ref\Entities.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Entities\obj\Debug\net6.0\Entities.pdb

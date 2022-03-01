@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lebdvdlKpFcEx19umgLURD9QHdj+Im+3OKZoFB11DPypEDo9/iq25iUxuflhura9mKv6Lkt5oh+Y/04ZE+6GbA==",
+  "success": true,
+  "projectFilePath": "D:\\01-Working\\02-2021\\2021\\01-diadiem\\09-Api_StressTest\\Diadiem\\Helpers\\Helpers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vuong.tran\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

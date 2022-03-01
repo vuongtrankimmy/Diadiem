@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Owners\Customers\" />
+    <Folder Include="Owners\Erp\" />
+    <Folder Include="Owners\Hrs\" />
+    <Folder Include="Owners\Systems\" />
+    <Folder Include="Owners\Reports\" />
+    <Folder Include="Owners\Orders\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,51 @@
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\bin\Debug\net6.0\Contracts.deps.json
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\bin\Debug\net6.0\Contracts.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\bin\Debug\net6.0\ref\Contracts.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\bin\Debug\net6.0\Contracts.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\bin\Debug\net6.0\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\bin\Debug\net6.0\Entities.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\bin\Debug\net6.0\en-US\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\bin\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\obj\Debug\net6.0\Contracts.csproj.AssemblyReference.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\obj\Debug\net6.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfoInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfo.cs
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\obj\Debug\net6.0\Contracts.csproj.CoreCompileInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\obj\Debug\net6.0\Contracts.csproj.CopyComplete
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\obj\Debug\net6.0\Contracts.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\obj\Debug\net6.0\ref\Contracts.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\06-Project 5\TKT.Api\Contracts\obj\Debug\net6.0\Contracts.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\bin\Debug\net6.0\Contracts.deps.json
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\bin\Debug\net6.0\Contracts.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\bin\Debug\net6.0\ref\Contracts.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\bin\Debug\net6.0\Contracts.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\bin\Debug\net6.0\Entities.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\bin\Debug\net6.0\Entities.pdb
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\bin\Debug\net6.0\en-US\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\bin\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\obj\Debug\net6.0\Contracts.csproj.AssemblyReference.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\obj\Debug\net6.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfoInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfo.cs
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\obj\Debug\net6.0\Contracts.csproj.CoreCompileInputs.cache
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\obj\Debug\net6.0\Contracts.csproj.CopyComplete
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\obj\Debug\net6.0\Contracts.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\obj\Debug\net6.0\ref\Contracts.dll
+D:\Working\03-Project\01-Tran Quoc\01-trankimtrade.com\03-Web\01-Resource\03-Project 3\TKT.Fro.Api\Contracts\obj\Debug\net6.0\Contracts.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Debug\net6.0\Contracts.deps.json
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Debug\net6.0\Contracts.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Debug\net6.0\ref\Contracts.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Debug\net6.0\Contracts.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Debug\net6.0\Entities.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Debug\net6.0\Entities.pdb
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Debug\net6.0\en-US\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\bin\Debug\net6.0\vi-VN\Entities.resources.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Debug\net6.0\Contracts.csproj.AssemblyReference.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Debug\net6.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfoInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Debug\net6.0\Contracts.AssemblyInfo.cs
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Debug\net6.0\Contracts.csproj.CoreCompileInputs.cache
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Debug\net6.0\Contracts.csproj.CopyComplete
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Debug\net6.0\Contracts.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Debug\net6.0\ref\Contracts.dll
+D:\01-Working\02-2021\2021\01-diadiem\09-Api_StressTest\Diadiem\Contracts\obj\Debug\net6.0\Contracts.pdb

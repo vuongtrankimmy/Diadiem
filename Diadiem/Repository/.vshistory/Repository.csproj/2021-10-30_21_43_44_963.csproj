@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\Contracts.csproj" />
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Owners\Customers\" />
+    <Folder Include="Owners\Hrs\" />
+    <Folder Include="Owners\Erp\" />
+    <Folder Include="Owners\Reports\" />
+    <Folder Include="Owners\Systems\" />
+    <Folder Include="Owners\Orders\" />
+    <Folder Include="Owners\Users\Devices\" />
+    <Folder Include="Owners\Users\Groups\" />
+    <Folder Include="Owners\Users\Menus\" />
+    <Folder Include="Owners\Users\MenusLinks\" />
+    <Folder Include="Owners\Users\MenusLinksItem\" />
+    <Folder Include="Owners\Users\Modifiers\" />
+    <Folder Include="Owners\Users\ModifiersItem\" />
+  </ItemGroup>
+
+</Project>
